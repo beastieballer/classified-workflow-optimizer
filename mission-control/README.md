@@ -14,6 +14,17 @@ A single place to track:
 - `BUILD_TRACKER.md` — active builds and blockers
 - `ACTION_BOARD.md` — today/this-week execution list
 - `METRICS_LOG.md` — weekly business metrics
+- `dashboard.html` — visual mission-control cockpit
+- `dashboard.css` / `dashboard.js` — dashboard styling + logic
+
+## View Dashboard
+From `mission-control/` run:
+
+```bash
+python3 -m http.server 8090
+```
+
+Then open: `http://localhost:8090/dashboard.html`
 
 ## Operating Rhythm
 - **Daily:** update `ACTION_BOARD.md`

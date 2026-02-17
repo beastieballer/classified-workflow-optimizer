@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mission Control ♜</title>
+    <link rel="stylesheet" href="dashboard.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Mission Control ♜</h1>
+      <p>Venture status cockpit for Alex + Rook</p>
+    </header>
+
+    <main>
+      <section class="grid" id="stats"></section>
+
+      <section class="panel">
+        <h2>Today’s Action Board</h2>
+        <ul id="todayList"></ul>
+      </section>
+
+      <section class="panel two-col">
+        <div>
+          <h2>Active Build Tracker</h2>
+          <ul id="buildList"></ul>
+        </div>
+        <div>
+          <h2>Top Ideas</h2>
+          <ul id="ideaList"></ul>
+        </div>
+      </section>
+
+      <section class="panel">
+        <h2>Files</h2>
+        <div class="links">
+          <a href="IDEA_VAULT.md">IDEA_VAULT.md</a>
+          <a href="BUILD_TRACKER.md">BUILD_TRACKER.md</a>
+          <a href="ACTION_BOARD.md">ACTION_BOARD.md</a>
+          <a href="METRICS_LOG.md">METRICS_LOG.md</a>
+        </div>
+      </section>
+    </main>
+
+    <script src="dashboard.js"></script>
+  </body>
+</html>

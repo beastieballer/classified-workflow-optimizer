@@ -13,6 +13,7 @@
 - [ ] Airtable/HubSpot endpoint deployed
 - [ ] Domain DNS + hosting deployed
 - [ ] First 20-contact outreach sprint completed
+- [x] Mission Control dashboard (visual cockpit) created
 
 ## This Week’s Build Milestones
 1. Deploy public page (Vercel/Netlify/Cloudflare Pages)
