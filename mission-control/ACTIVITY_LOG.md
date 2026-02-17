@@ -10,3 +10,5 @@ Chronological build log for autonomous work by Rook.
 - [18:18] Upgraded dashboard to display recent activity live from Activity Log.
 - [18:26] Shipped Mission Control v2 UI refresh with color system and command-center styling.
 - [18:27] Added KPI strip, pipeline funnel, and weekly target-vs-actual scoreboard.
+- [18:39] Started local Mission Control server on port 8090 for desktop/mobile access.
+- [18:40] Created temporary public URL via LocalTunnel for mobile access outside local network.
