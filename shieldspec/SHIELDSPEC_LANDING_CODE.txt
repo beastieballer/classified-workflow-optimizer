@@ -1,0 +1,511 @@
+ShieldSpec Landing Page Source Code
+
+======================================================================
+FILE: package.json
+======================================================================
+{"name":"shieldspec","version":"0.1.0","private":true,"scripts":{"dev":"next dev","build":"next build","start":"next start"},"dependencies":{"next":"^15","react":"^19","react-dom":"^19"},"devDependencies":{"@types/node":"^22","@types/react":"^19","typescript":"^5","tailwindcss":"^4","@tailwindcss/postcss":"^4","postcss":"^8"}}
+
+
+======================================================================
+FILE: tsconfig.json
+======================================================================
+{
+  "compilerOptions": {
+    "target": "ES2017",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "plugins": [{ "name": "next" }],
+    "paths": { "@/*": ["./src/*"] }
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "exclude": ["node_modules"]
+}
+
+
+======================================================================
+FILE: next.config.ts
+======================================================================
+import type { NextConfig } from "next";
+
+const nextConfig: NextConfig = {};
+
+export default nextConfig;
+
+
+======================================================================
+FILE: postcss.config.mjs
+======================================================================
+/** @type {import('postcss-load-config').Config} */
+const config = {
+  plugins: {
+    "@tailwindcss/postcss": {},
+  },
+};
+export default config;
+
+
+======================================================================
+FILE: src/app/layout.tsx
+======================================================================
+import type { Metadata } from "next";
+import "./globals.css";
+
+export const metadata: Metadata = {
+  title: "ShieldSpec — SCIF & TEMPEST Window Film Compliance",
+  description:
+    "AI-powered compliance brokerage for classified facility window film installations. ICD 705 & TEMPEST certified.",
+};
+
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  return (
+    <html lang="en">
+      <body className="bg-navy text-white antialiased">{children}</body>
+    </html>
+  );
+}
+
+
+======================================================================
+FILE: src/app/page.tsx
+======================================================================
+export default function Home() {
+  return (
+    <main className="min-h-screen">
+      {/* Nav */}
+      <nav className="fixed top-0 w-full z-50 bg-navy/90 backdrop-blur border-b border-navy-mid">
+        <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+          <div className="flex items-center gap-2">
+            <span className="text-shield-gold text-2xl font-bold tracking-tight">
+              Shield<span className="text-white">Spec</span>
+            </span>
+            <span className="text-[10px] uppercase tracking-[0.2em] text-steel bg-navy-mid px-2 py-0.5 rounded">
+              .ai
+            </span>
+          </div>
+          <a
+            href="#contact"
+            className="bg-shield-gold hover:bg-shield-gold-light text-navy font-semibold px-5 py-2.5 rounded text-sm transition-colors"
+          >
+            Request Assessment
+          </a>
+        </div>
+      </nav>
+
+      {/* Hero */}
+      <section className="pt-32 pb-20 px-6">
+        <div className="max-w-4xl mx-auto text-center">
+          <div className="inline-block mb-6 px-4 py-1.5 border border-shield-gold/30 rounded-full text-shield-gold text-xs uppercase tracking-widest">
+            SCIF &amp; TEMPEST Compliance
+          </div>
+          <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-6">
+            Classified Facility
+            <br />
+            <span className="text-shield-gold">Window Film Compliance</span>
+            <br />
+            Made Simple
+          </h1>
+          <p className="text-lg md:text-xl text-steel-light max-w-2xl mx-auto mb-10 leading-relaxed">
+            AI-powered specification, sourcing, and installation brokerage for
+            ICD 705, TEMPEST, and RF-shielding window film. 30+ years of
+            classified facility expertise, now available on demand.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <a
+              href="#contact"
+              className="bg-shield-gold hover:bg-shield-gold-light text-navy font-bold px-8 py-4 rounded text-lg transition-colors"
+            >
+              Get a Free Compliance Assessment
+            </a>
+            <a
+              href="#how"
+              className="border border-steel/30 hover:border-steel text-white font-semibold px-8 py-4 rounded text-lg transition-colors"
+            >
+              How It Works
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* Trust Bar */}
+      <section className="border-y border-navy-mid py-8 px-6">
+        <div className="max-w-5xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+          {[
+            { num: "30+", label: "Years Experience" },
+            { num: "500+", label: "Classified Facilities" },
+            { num: "ICD 705", label: "Compliant" },
+            { num: "TEMPEST", label: "Certified" },
+          ].map((s) => (
+            <div key={s.label}>
+              <div className="text-2xl md:text-3xl font-bold text-shield-gold">
+                {s.num}
+              </div>
+              <div className="text-sm text-steel mt-1">{s.label}</div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* Problem */}
+      <section className="py-20 px-6">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">
+            The Problem
+          </h2>
+          <p className="text-steel-light text-center max-w-2xl mx-auto mb-12 text-lg">
+            Getting SCIF window film right is critical — and getting it wrong
+            can compromise national security.
+          </p>
+          <div className="grid md:grid-cols-3 gap-6">
+            {[
+              {
+                icon: "⚠️",
+                title: "Compliance Is Complex",
+                desc: "ICD 705, TEMPEST, and agency-specific requirements create a maze of specifications that most contractors can't navigate alone.",
+              },
+              {
+                icon: "🔍",
+                title: "Qualified Installers Are Rare",
+                desc: "Finding cleared, certified installers with experience in classified environments takes months of searching and vetting.",
+              },
+              {
+                icon: "⏱️",
+                title: "Delays Cost Millions",
+                desc: "A failed inspection or wrong specification can delay SCIF accreditation by weeks, impacting mission-critical timelines.",
+              },
+            ].map((c) => (
+              <div
+                key={c.title}
+                className="bg-navy-light border border-navy-mid rounded-lg p-6"
+              >
+                <div className="text-3xl mb-3">{c.icon}</div>
+                <h3 className="text-lg font-semibold mb-2">{c.title}</h3>
+                <p className="text-steel text-sm leading-relaxed">{c.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* How It Works */}
+      <section id="how" className="py-20 px-6 bg-navy-light">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">
+            How ShieldSpec Works
+          </h2>
+          <p className="text-steel-light text-center max-w-2xl mx-auto mb-12 text-lg">
+            From initial assessment to final inspection — we handle everything.
+          </p>
+          <div className="grid md:grid-cols-3 gap-8">
+            {[
+              {
+                step: "01",
+                title: "Submit Your Requirements",
+                desc: "Tell us your facility type, classification level, and compliance needs. Our AI analyzes your requirements and generates a complete specification in minutes.",
+              },
+              {
+                step: "02",
+                title: "Get Matched & Quoted",
+                desc: "We match you with vetted, cleared installers who specialize in your exact requirements. Receive competitive quotes within 48 hours.",
+              },
+              {
+                step: "03",
+                title: "Install & Certify",
+                desc: "Our network handles installation, documentation, and compliance verification. You get a turnkey solution that passes inspection the first time.",
+              },
+            ].map((s) => (
+              <div key={s.step} className="text-center">
+                <div className="text-5xl font-bold text-shield-gold/20 mb-3">
+                  {s.step}
+                </div>
+                <h3 className="text-lg font-semibold mb-2">{s.title}</h3>
+                <p className="text-steel text-sm leading-relaxed">{s.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Services */}
+      <section className="py-20 px-6">
+        <div className="max-w-5xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
+            What We Cover
+          </h2>
+          <div className="grid md:grid-cols-2 gap-6">
+            {[
+              {
+                title: "SCIF Window Film (ICD 705)",
+                desc: "Full compliance with Intelligence Community Directive 705 for Sensitive Compartmented Information Facilities.",
+              },
+              {
+                title: "TEMPEST / RF Shielding",
+                desc: "Signal attenuation films that meet TEMPEST requirements for preventing electromagnetic emanations.",
+              },
+              {
+                title: "Blast & Forced Entry",
+                desc: "GSA-rated security films for blast mitigation and forced-entry resistance at government facilities.",
+              },
+              {
+                title: "Solar & Energy Films",
+                desc: "Energy-efficient window films for federal buildings meeting sustainability and LEED requirements.",
+              },
+              {
+                title: "Compliance Documentation",
+                desc: "AI-generated spec sheets, installation certificates, and inspection-ready documentation packages.",
+              },
+              {
+                title: "Ongoing Maintenance",
+                desc: "Scheduled inspection and maintenance programs to ensure continued compliance over the life of the installation.",
+              },
+            ].map((s) => (
+              <div
+                key={s.title}
+                className="flex gap-4 bg-navy-light border border-navy-mid rounded-lg p-5"
+              >
+                <div className="text-shield-gold text-xl mt-0.5">✓</div>
+                <div>
+                  <h3 className="font-semibold mb-1">{s.title}</h3>
+                  <p className="text-steel text-sm leading-relaxed">
+                    {s.desc}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Social Proof */}
+      <section className="py-20 px-6 bg-navy-light">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-3xl md:text-4xl font-bold mb-12">
+            Trusted by Those Who Can&apos;t Afford to Get It Wrong
+          </h2>
+          <div className="grid md:grid-cols-2 gap-6">
+            {[
+              {
+                quote:
+                  "ShieldSpec eliminated the guesswork from our SCIF window film procurement. What used to take us weeks of research and vendor calls was handled in 48 hours.",
+                role: "Facility Security Officer, Defense Contractor",
+              },
+              {
+                quote:
+                  "Finding cleared installers who actually understand TEMPEST requirements was nearly impossible before. ShieldSpec's network solved that problem overnight.",
+                role: "Program Manager, Intelligence Community",
+              },
+            ].map((t) => (
+              <div
+                key={t.role}
+                className="bg-navy border border-navy-mid rounded-lg p-6 text-left"
+              >
+                <p className="text-steel-light italic mb-4 leading-relaxed">
+                  &ldquo;{t.quote}&rdquo;
+                </p>
+                <p className="text-shield-gold text-sm font-semibold">
+                  — {t.role}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Contact / Lead Form */}
+      <section id="contact" className="py-20 px-6">
+        <div className="max-w-2xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">
+            Request a Free Compliance Assessment
+          </h2>
+          <p className="text-steel-light text-center mb-10 text-lg">
+            Tell us about your facility and we&apos;ll provide a detailed
+            specification and quote within 48 hours.
+          </p>
+          <form
+            action="https://formspree.io/f/placeholder"
+            method="POST"
+            className="space-y-5"
+          >
+            <div className="grid md:grid-cols-2 gap-5">
+              <div>
+                <label className="block text-sm text-steel mb-1.5">Name</label>
+                <input
+                  type="text"
+                  name="name"
+                  required
+                  className="w-full bg-navy-light border border-navy-mid rounded px-4 py-3 text-white focus:border-shield-gold focus:outline-none transition-colors"
+                />
+              </div>
+              <div>
+                <label className="block text-sm text-steel mb-1.5">
+                  Email
+                </label>
+                <input
+                  type="email"
+                  name="email"
+                  required
+                  className="w-full bg-navy-light border border-navy-mid rounded px-4 py-3 text-white focus:border-shield-gold focus:outline-none transition-colors"
+                />
+              </div>
+            </div>
+            <div className="grid md:grid-cols-2 gap-5">
+              <div>
+                <label className="block text-sm text-steel mb-1.5">
+                  Organization
+                </label>
+                <input
+                  type="text"
+                  name="organization"
+                  className="w-full bg-navy-light border border-navy-mid rounded px-4 py-3 text-white focus:border-shield-gold focus:outline-none transition-colors"
+                />
+              </div>
+              <div>
+                <label className="block text-sm text-steel mb-1.5">
+                  Phone
+                </label>
+                <input
+                  type="tel"
+                  name="phone"
+                  className="w-full bg-navy-light border border-navy-mid rounded px-4 py-3 text-white focus:border-shield-gold focus:outline-none transition-colors"
+                />
+              </div>
+            </div>
+            <div>
+              <label className="block text-sm text-steel mb-1.5">
+                Facility Type
+              </label>
+              <select
+                name="facility_type"
+                className="w-full bg-navy-light border border-navy-mid rounded px-4 py-3 text-white focus:border-shield-gold focus:outline-none transition-colors"
+              >
+                <option value="">Select...</option>
+                <option value="scif">SCIF</option>
+                <option value="sapf">SAP Facility (SAPF)</option>
+                <option value="tempest">TEMPEST Zone</option>
+                <option value="government">Government Office</option>
+                <option value="defense_contractor">
+                  Defense Contractor Facility
+                </option>
+                <option value="embassy">Embassy / Consulate</option>
+                <option value="other">Other Classified Space</option>
+              </select>
+            </div>
+            <div>
+              <label className="block text-sm text-steel mb-1.5">
+                Compliance Requirements
+              </label>
+              <div className="grid grid-cols-2 gap-3">
+                {[
+                  "ICD 705",
+                  "TEMPEST",
+                  "RF Shielding",
+                  "Blast Mitigation",
+                  "Forced Entry",
+                  "Solar / Energy",
+                ].map((req) => (
+                  <label
+                    key={req}
+                    className="flex items-center gap-2 text-sm text-steel-light"
+                  >
+                    <input
+                      type="checkbox"
+                      name="requirements"
+                      value={req}
+                      className="accent-shield-gold"
+                    />
+                    {req}
+                  </label>
+                ))}
+              </div>
+            </div>
+            <div>
+              <label className="block text-sm text-steel mb-1.5">
+                Project Details
+              </label>
+              <textarea
+                name="details"
+                rows={4}
+                placeholder="Number of windows, square footage, timeline, any specific requirements..."
+                className="w-full bg-navy-light border border-navy-mid rounded px-4 py-3 text-white placeholder:text-steel/50 focus:border-shield-gold focus:outline-none transition-colors"
+              ></textarea>
+            </div>
+            <button
+              type="submit"
+              className="w-full bg-shield-gold hover:bg-shield-gold-light text-navy font-bold py-4 rounded text-lg transition-colors"
+            >
+              Submit Assessment Request
+            </button>
+            <p className="text-steel text-xs text-center">
+              All inquiries are handled with the highest level of
+              confidentiality. We do not share facility information with
+              unauthorized parties.
+            </p>
+          </form>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="border-t border-navy-mid py-10 px-6">
+        <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
+          <div className="text-shield-gold font-bold text-lg">
+            Shield<span className="text-white">Spec</span>
+            <span className="text-steel text-sm font-normal">.ai</span>
+          </div>
+          <div className="text-steel text-sm">
+            © {new Date().getFullYear()} ShieldSpec. All rights reserved.
+          </div>
+          <div className="text-steel text-xs">
+            Veteran-Owned · ITAR Compliant · Made in the USA
+          </div>
+        </div>
+      </footer>
+    </main>
+  );
+}
+
+
+======================================================================
+FILE: src/app/globals.css
+======================================================================
+@import "tailwindcss";
+
+@theme {
+  --color-navy: #0a1628;
+  --color-navy-light: #132240;
+  --color-navy-mid: #1a2d4a;
+  --color-shield-gold: #c9a84c;
+  --color-shield-gold-light: #e0c36a;
+  --color-steel: #8899aa;
+  --color-steel-light: #b0bec5;
+  --color-ice: #e8eef4;
+}
+
+
+======================================================================
+FILE: src/app/not-found.tsx
+======================================================================
+export default function NotFound() {
+  return (
+    <div className="min-h-screen flex items-center justify-center">
+      <div className="text-center">
+        <h1 className="text-4xl font-bold text-shield-gold mb-4">404</h1>
+        <p className="text-steel">Page not found</p>
+      </div>
+    </div>
+  );
+}
+
+
