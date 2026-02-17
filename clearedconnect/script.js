@@ -1,7 +1,40 @@
 const form = document.getElementById('intakeForm');
 const result = document.getElementById('result');
 const year = document.getElementById('year');
+const config = window.CC_CONFIG || { leadCapture: { provider: 'none' } };
+
 if (year) year.textContent = new Date().getFullYear();
+
+function initGA4() {
+  const id = config?.ga4MeasurementId;
+  if (!id) return;
+
+  const script = document.createElement('script');
+  script.async = true;
+  script.src = `https://www.googletagmanager.com/gtag/js?id=${id}`;
+  document.head.appendChild(script);
+
+  window.dataLayer = window.dataLayer || [];
+  window.gtag = window.gtag || function () { window.dataLayer.push(arguments); };
+  window.gtag('js', new Date());
+  window.gtag('config', id);
+}
+
+function track(eventName, params = {}) {
+  if (typeof window.gtag === 'function') {
+    window.gtag('event', eventName, params);
+  }
+}
+
+function wireCtaTracking() {
+  const nodes = document.querySelectorAll('[data-track]');
+  nodes.forEach((node) => {
+    node.addEventListener('click', () => {
+      const key = node.getAttribute('data-track');
+      track('select_content', { content_type: 'cta', item_id: key });
+    });
+  });
+}
 
 function scoreIntake(data) {
   let score = 50;
@@ -20,7 +53,34 @@ function urgencyLabel(score) {
   return 'Qualified - follow-up recommended';
 }
 
-form?.addEventListener('submit', (e) => {
+async function sendLead(payload) {
+  const leadCapture = config?.leadCapture || {};
+  if (!leadCapture.endpoint || leadCapture.provider === 'none') return { skipped: true };
+
+  const headers = { 'Content-Type': 'application/json' };
+  if (leadCapture.apiKey) headers.Authorization = `Bearer ${leadCapture.apiKey}`;
+
+  const body = {
+    provider: leadCapture.provider,
+    source: 'clearedconnect.io',
+    submittedAt: new Date().toISOString(),
+    ...payload
+  };
+
+  const res = await fetch(leadCapture.endpoint, {
+    method: 'POST',
+    headers,
+    body: JSON.stringify(body)
+  });
+
+  if (!res.ok) {
+    throw new Error(`Lead capture failed (${res.status})`);
+  }
+
+  return { ok: true };
+}
+
+form?.addEventListener('submit', async (e) => {
   e.preventDefault();
   const formData = new FormData(form);
   const data = Object.fromEntries(formData.entries());
@@ -36,4 +96,21 @@ form?.addEventListener('submit', (e) => {
 
   result.classList.add('ok');
   result.innerHTML = `<strong>Readiness score: ${score}/100</strong><br>${label}. Next step: book a confidential scope call.`;
+
+  track('generate_lead', {
+    method: 'intake_form',
+    value: score,
+    clearance: data.clearance,
+    timeline: data.timeline
+  });
+
+  try {
+    await sendLead({ data, score, label });
+  } catch (err) {
+    console.warn(err.message);
+    result.innerHTML += '<br><small>Note: lead capture endpoint is not connected yet.</small>';
+  }
 });
+
+initGA4();
+wireCtaTracking();

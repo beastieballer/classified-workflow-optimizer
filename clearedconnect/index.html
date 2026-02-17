@@ -6,7 +6,7 @@
     <title>ClearedConnect.io — SCIF Compliance Broker</title>
     <meta
       name="description"
-      content="ClearedConnect helps primes and facility teams source SCIF-compliant window film scope and cleared labor quickly, with intake-first project qualification."
+      content="ClearedConnect helps prime contractors and secure facility teams execute SCIF-compliant window-film scope with cleared labor, faster and with lower operational risk."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -24,7 +24,7 @@
           <a href="#services">Services</a>
           <a href="#process">Process</a>
           <a href="#intake">Project Intake</a>
-          <a href="#contact" class="btn btn-sm">Book Call</a>
+          <a href="#contact" class="btn btn-sm" data-track="cta_book_call_nav">Book Call</a>
         </nav>
       </div>
     </header>
@@ -33,32 +33,32 @@
       <section class="hero">
         <div class="container hero-grid">
           <div>
-            <p class="eyebrow">SCIF COMPLIANCE BROKER • PHASE 1</p>
-            <h1>SCIF film scope and cleared labor, without the staffing scramble.</h1>
+            <p class="eyebrow">SCIF COMPLIANCE BROKER • BUILT FOR DEFENSE EXECUTION</p>
+            <h1>Get SCIF film scope staffed and executed — without clearance bottlenecks.</h1>
             <p class="subhead">
-              ClearedConnect helps prime contractors and secure facility teams execute
-              SCIF-compliant window-film work fast — with vetted cleared trades and an
-              intake-first workflow that reduces project risk.
+              ClearedConnect supports prime contractors, subs, and secure-facility teams with
+              intake-qualified scope and vetted cleared labor. We reduce delays, reduce rework,
+              and align field execution with the realities of classified environments.
             </p>
             <div class="cta-row">
-              <a href="#contact" class="btn">Book a Confidential Scope Call</a>
-              <a href="#intake" class="btn btn-ghost">Submit Project Intake</a>
+              <a href="#contact" class="btn" data-track="cta_book_call_hero">Book a Confidential Scope Call</a>
+              <a href="#intake" class="btn btn-ghost" data-track="cta_submit_intake_hero">Submit Project Intake</a>
             </div>
             <ul class="trust-list">
-              <li>Built for defense + classified environments</li>
-              <li>Operator-led network with 30+ years in the field</li>
-              <li>Broker model now, marketplace expansion in progress</li>
+              <li>30+ years operating in defense and classified settings</li>
+              <li>Scope-first workflow to catch risk before mobilization</li>
+              <li>Broker model now, clearance labor marketplace expansion underway</li>
             </ul>
           </div>
           <aside class="card stat-card">
-            <h3>Why teams use ClearedConnect</h3>
+            <h3>Why mission-critical teams use ClearedConnect</h3>
             <ul>
               <li><strong>Speed:</strong> faster access to trusted cleared labor</li>
-              <li><strong>Confidence:</strong> scope matched to secure-site realities</li>
-              <li><strong>Control:</strong> one intake that qualifies work up front</li>
+              <li><strong>Compliance Confidence:</strong> scope aligned to secure-site constraints</li>
+              <li><strong>Delivery Control:</strong> one intake to qualify urgency and complexity</li>
             </ul>
             <p class="micro">
-              Today: brokered SCIF compliance staffing. Next: full clearance labor marketplace.
+              Designed for real execution pressure — not generic staffing forms.
             </p>
           </aside>
         </div>
@@ -71,22 +71,22 @@
             <article class="card">
               <h3>SCIF Scope Qualification</h3>
               <p>
-                We qualify location, clearance level, timeline, and trade scope before you waste
-                time with mismatched candidates.
+                We qualify location, clearance environment, timeline, and trade scope up front so
+                your team avoids costly mismatches and schedule slip.
               </p>
             </article>
             <article class="card">
-              <h3>Cleared Installer Matching</h3>
+              <h3>Cleared Labor Matching</h3>
               <p>
-                We source and align cleared professionals with the technical and security demands
-                of your specific project.
+                We match personnel to project requirements with security and operational fit in
+                mind — not just availability.
               </p>
             </article>
             <article class="card">
-              <h3>Execution Support</h3>
+              <h3>Execution Coordination</h3>
               <p>
-                From pre-mobilization to closeout, we coordinate communication across project,
-                facility, and security stakeholders.
+                We keep project stakeholders aligned across facility, security, and field teams from
+                pre-mobilization through closeout.
               </p>
             </article>
           </div>
@@ -97,10 +97,10 @@
         <div class="container">
           <h2>How it works</h2>
           <div class="steps">
-            <div class="step"><span>1</span><p>Submit project intake in 3–5 minutes</p></div>
-            <div class="step"><span>2</span><p>Get rapid qualification and risk flags</p></div>
-            <div class="step"><span>3</span><p>Review matched cleared labor options</p></div>
-            <div class="step"><span>4</span><p>Confirm scope and execute with confidence</p></div>
+            <div class="step"><span>1</span><p>Submit intake (3–5 minutes)</p></div>
+            <div class="step"><span>2</span><p>Receive qualification + risk flags</p></div>
+            <div class="step"><span>3</span><p>Review vetted cleared labor options</p></div>
+            <div class="step"><span>4</span><p>Lock scope and execute with confidence</p></div>
           </div>
         </div>
       </section>
@@ -110,11 +110,11 @@
           <div>
             <h2>AI-Assisted Project Intake</h2>
             <p>
-              Use the intake form to qualify a project. The form generates an on-page readiness
-              score to help prioritize urgent and high-complexity work.
+              The intake flow scores readiness and captures project signals for broker follow-up.
+              Submissions are sent to your CRM endpoint (Airtable or HubSpot) when configured.
             </p>
             <p class="micro">
-              Note: this is a front-end MVP. Connect to Airtable/CRM/Zapier in v2 for automation.
+              In this build, set your integration values in <code>window.CC_CONFIG</code> below.
             </p>
           </div>
 
@@ -166,7 +166,7 @@
               <textarea name="scope" rows="4" placeholder="Type, size, access constraints, special requirements"></textarea>
             </label>
 
-            <button type="submit" class="btn">Run Intake Check</button>
+            <button type="submit" class="btn" data-track="cta_run_intake">Run Intake Check</button>
             <div id="result" class="result" aria-live="polite"></div>
           </form>
         </div>
@@ -176,9 +176,13 @@
         <div class="container contact">
           <h2>Ready to scope your project?</h2>
           <p>
-            Tell us what needs to get done. We’ll respond with next steps and availability.
+            Tell us what needs to get done. We’ll respond with availability and a recommended next step.
           </p>
-          <a class="btn" href="mailto:hello@clearedconnect.io?subject=Confidential%20Scope%20Call%20Request">
+          <a
+            class="btn"
+            data-track="cta_book_call_footer"
+            href="mailto:hello@clearedconnect.io?subject=Confidential%20Scope%20Call%20Request"
+          >
             Book a Confidential Scope Call
           </a>
         </div>
@@ -192,6 +196,16 @@
       </div>
     </footer>
 
+    <script>
+      window.CC_CONFIG = {
+        ga4MeasurementId: "", // ex: G-XXXXXXXXXX
+        leadCapture: {
+          provider: "airtable", // "airtable" | "hubspot" | "none"
+          endpoint: "", // your webhook or server endpoint
+          apiKey: "" // optional if endpoint requires bearer auth
+        }
+      };
+    </script>
     <script src="script.js"></script>
   </body>
 </html>
