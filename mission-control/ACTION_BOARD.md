@@ -1,7 +1,7 @@
 # ACTION BOARD
 
 ## Today (Top 5)
-- [ ] Publish ClearedConnect page to public URL
+- [x] Publish ClearedConnect page to public URL
 - [ ] Connect intake to Airtable or HubSpot
 - [ ] Draft outreach script (short DM/email + call opener)
 - [ ] Build list of 20 warm contacts
@@ -19,3 +19,4 @@
 
 ## Done
 - [x] Mission Control initialized
+- [x] Mission Control deployed to permanent mobile URL (Vercel)
