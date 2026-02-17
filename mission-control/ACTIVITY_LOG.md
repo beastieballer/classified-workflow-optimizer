@@ -19,3 +19,5 @@ Chronological build log for autonomous work by Rook.
 - [19:15] Added autonomous cron: daily CEO brief at 18:30 ET.
 - [19:16] Updated HEARTBEAT.md with autonomous Mission Control maintenance checklist.
 - [19:17] Checked deploy CLIs: Vercel installed but not authenticated; Netlify/Wrangler not installed.
+- [19:22] Verified Vercel authentication and completed first production deploy.
+- [19:22] Live permanent Mission Control URL set: https://mission-control-kappa-two.vercel.app
