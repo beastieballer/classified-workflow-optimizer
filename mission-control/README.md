@@ -18,12 +18,22 @@ A single place to track:
 - `dashboard.css` / `dashboard.js` — dashboard styling + logic
 - `ACTIVITY_LOG.md` — autonomous build timeline
 
-## Dashboard Modules (v2)
+## Dashboard Modules (v3)
 - KPI strip with color-coded status
+- Venture Command Deck (ClearedConnect + ShieldSpec)
+- Per-venture actionable next moves
 - Pipeline funnel visualization
 - Weekly target-vs-actual scoreboard
 - Today actions, build tracker, top ideas
 - Live recent activity feed
+- Animated gradient grid background + hover motion
+
+## Configuration
+Edit `CONFIG.json` to control:
+- Weekly KPI targets
+- Ventures tracked
+- Per-venture KPI values
+- Per-venture action items
 
 ## View Dashboard
 From `mission-control/` run:

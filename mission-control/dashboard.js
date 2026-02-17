@@ -3,10 +3,11 @@ const files = {
   build: 'BUILD_TRACKER.md',
   ideas: 'IDEA_VAULT.md',
   metrics: 'METRICS_LOG.md',
-  activity: 'ACTIVITY_LOG.md'
+  activity: 'ACTIVITY_LOG.md',
+  config: 'CONFIG.json'
 };
 
-const weeklyTargets = {
+const defaultTargets = {
   inboundLeads: 10,
   qualifiedLeads: 5,
   scopeCallsBooked: 3,
@@ -46,9 +47,49 @@ function setStats(stats) {
   });
 }
 
-async function loadMd(path) {
+async function loadText(path) {
   const res = await fetch(path);
   return await res.text();
+}
+
+async function loadJson(path, fallback = {}) {
+  try {
+    const res = await fetch(path);
+    if (!res.ok) return fallback;
+    return await res.json();
+  } catch {
+    return fallback;
+  }
+}
+
+function renderVentureDeck(ventures = []) {
+  const root = document.getElementById('ventureDeck');
+  if (!ventures.length) {
+    root.innerHTML = '<p>No ventures configured yet. Add entries in CONFIG.json.</p>';
+    return;
+  }
+
+  root.innerHTML = ventures
+    .map((v) => {
+      const k = v.kpis || {};
+      return `
+        <article class="venture-card ${v.theme || 'blue'}">
+          <h3>${v.name}</h3>
+          <p class="sub">${v.focus || ''}</p>
+          <div class="venture-kpis">
+            <span class="pill">Leads: ${k.leads ?? 0}</span>
+            <span class="pill">Calls: ${k.callsBooked ?? 0}</span>
+            <span class="pill">Won: ${k.dealsWon ?? 0}</span>
+            <span class="pill">$ ${Number(k.revenue ?? 0).toLocaleString()}</span>
+          </div>
+          <strong>Actionable next moves</strong>
+          <ul class="actions">
+            ${(v.actions || []).map((a) => `<li>${a}</li>`).join('')}
+          </ul>
+        </article>
+      `;
+    })
+    .join('');
 }
 
 function renderFunnel(metrics) {
@@ -60,16 +101,15 @@ function renderFunnel(metrics) {
     ['Won', metrics.dealsWon]
   ];
   const max = Math.max(...stages.map((s) => s[1]), 1);
-  const html = stages
+  document.getElementById('funnel').innerHTML = stages
     .map(([name, value]) => {
       const width = Math.max(8, Math.round((value / max) * 100));
       return `<div class="row"><strong>${name}</strong><div class="bar-wrap"><div class="bar" style="width:${width}%"></div></div><span>${value}</span></div>`;
     })
     .join('');
-  document.getElementById('funnel').innerHTML = html;
 }
 
-function renderScoreboard(metrics) {
+function renderScoreboard(metrics, weeklyTargets) {
   const rows = [
     ['Inbound Leads', metrics.inboundLeads, weeklyTargets.inboundLeads],
     ['Qualified Leads', metrics.qualifiedLeads, weeklyTargets.qualifiedLeads],
@@ -81,7 +121,7 @@ function renderScoreboard(metrics) {
 
   document.getElementById('scoreboard').innerHTML = rows
     .map(([name, actual, target]) => {
-      const pct = Math.min(100, Math.round((actual / target) * 100));
+      const pct = target ? Math.min(100, Math.round((actual / target) * 100)) : 0;
       const tone = statusClass(actual, target);
       const label = tone === 'good' ? 'On Target' : tone === 'warn' ? 'At Risk' : 'Off Pace';
       return `
@@ -98,13 +138,17 @@ function renderScoreboard(metrics) {
 }
 
 async function init() {
-  const [actions, build, ideas, activity, metricsMd] = await Promise.all([
-    loadMd(files.actions),
-    loadMd(files.build),
-    loadMd(files.ideas),
-    loadMd(files.activity),
-    loadMd(files.metrics)
+  const [actions, build, ideas, activity, metricsMd, config] = await Promise.all([
+    loadText(files.actions),
+    loadText(files.build),
+    loadText(files.ideas),
+    loadText(files.activity),
+    loadText(files.metrics),
+    loadJson(files.config, {})
   ]);
+
+  const weeklyTargets = config.weeklyTargets || defaultTargets;
+  const ventures = config.ventures || [];
 
   const actionOpen = getLines(actions, '- [ ]');
   const actionDone = getLines(actions, '- [x]');
@@ -136,28 +180,14 @@ async function init() {
     { label: 'Build Blockers', value: buildOpen.length, sub: 'Open build tasks', tone: buildOpen.length <= 2 ? 'good' : buildOpen.length <= 6 ? 'warn' : 'bad' }
   ]);
 
+  renderVentureDeck(ventures);
   renderFunnel(metrics);
-  renderScoreboard(metrics);
+  renderScoreboard(metrics, weeklyTargets);
 
-  document.getElementById('todayList').innerHTML = actionOpen
-    .slice(0, 8)
-    .map((l) => `<li>${l.replace('- [ ] ', '')}</li>`)
-    .join('');
-
-  document.getElementById('buildList').innerHTML = buildOpen
-    .slice(0, 8)
-    .map((l) => `<li>${l.replace('- [ ] ', '')}</li>`)
-    .join('');
-
-  document.getElementById('ideaList').innerHTML = ideaTitles
-    .map((t) => `<li>${t}</li>`)
-    .join('');
-
-  document.getElementById('activityList').innerHTML = activityItems
-    .slice(-10)
-    .reverse()
-    .map((l) => `<li>${l.replace('- ', '')}</li>`)
-    .join('');
+  document.getElementById('todayList').innerHTML = actionOpen.slice(0, 8).map((l) => `<li>${l.replace('- [ ] ', '')}</li>`).join('');
+  document.getElementById('buildList').innerHTML = buildOpen.slice(0, 8).map((l) => `<li>${l.replace('- [ ] ', '')}</li>`).join('');
+  document.getElementById('ideaList').innerHTML = ideaTitles.map((t) => `<li>${t}</li>`).join('');
+  document.getElementById('activityList').innerHTML = activityItems.slice(-10).reverse().map((l) => `<li>${l.replace('- ', '')}</li>`).join('');
 }
 
 init().catch(console.error);

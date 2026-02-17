@@ -12,3 +12,6 @@ Chronological build log for autonomous work by Rook.
 - [18:27] Added KPI strip, pipeline funnel, and weekly target-vs-actual scoreboard.
 - [18:39] Started local Mission Control server on port 8090 for desktop/mobile access.
 - [18:40] Created temporary public URL via LocalTunnel for mobile access outside local network.
+- [18:49] Added ShieldSpec as second tracked venture in Mission Control.
+- [18:51] Added CONFIG.json for venture-aware KPI targets and actionable next moves.
+- [18:54] Upgraded dashboard visuals with animated grid/gradient background and interactive card motion.

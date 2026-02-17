@@ -1,0 +1,46 @@
+{
+  "weeklyTargets": {
+    "inboundLeads": 10,
+    "qualifiedLeads": 5,
+    "scopeCallsBooked": 3,
+    "proposalsSent": 2,
+    "dealsWon": 1,
+    "revenueClosed": 5000
+  },
+  "ventures": [
+    {
+      "id": "clearedconnect",
+      "name": "ClearedConnect.io",
+      "theme": "blue",
+      "focus": "SCIF compliance broker -> cleared labor marketplace",
+      "kpis": {
+        "leads": 0,
+        "callsBooked": 0,
+        "dealsWon": 0,
+        "revenue": 0
+      },
+      "actions": [
+        "Deploy public landing page URL",
+        "Connect intake endpoint to CRM",
+        "Book first 3 confidential scope calls"
+      ]
+    },
+    {
+      "id": "shieldspec",
+      "name": "ShieldSpec",
+      "theme": "green",
+      "focus": "SCIF-focused productized specification + execution support",
+      "kpis": {
+        "leads": 0,
+        "callsBooked": 0,
+        "dealsWon": 0,
+        "revenue": 0
+      },
+      "actions": [
+        "Define 3 productized service packages",
+        "Build one-page offer landing copy",
+        "Identify top 10 target accounts"
+      ]
+    }
+  ]
+}
