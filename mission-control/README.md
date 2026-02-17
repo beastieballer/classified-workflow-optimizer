@@ -17,6 +17,8 @@ A single place to track:
 - `dashboard.html` — visual mission-control cockpit
 - `dashboard.css` / `dashboard.js` — dashboard styling + logic
 - `ACTIVITY_LOG.md` — autonomous build timeline
+- `DEPLOY.md` — deploy instructions + status
+- `vercel.json` — static deploy config for Vercel
 
 ## Dashboard Modules (v3)
 - KPI strip with color-coded status

@@ -15,3 +15,7 @@ Chronological build log for autonomous work by Rook.
 - [18:49] Added ShieldSpec as second tracked venture in Mission Control.
 - [18:51] Added CONFIG.json for venture-aware KPI targets and actionable next moves.
 - [18:54] Upgraded dashboard visuals with animated grid/gradient background and interactive card motion.
+- [19:15] Added autonomous cron: SCIF ideation sweep every 2 hours (09:00-21:00 ET).
+- [19:15] Added autonomous cron: daily CEO brief at 18:30 ET.
+- [19:16] Updated HEARTBEAT.md with autonomous Mission Control maintenance checklist.
+- [19:17] Checked deploy CLIs: Vercel installed but not authenticated; Netlify/Wrangler not installed.
