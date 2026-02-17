@@ -2,7 +2,8 @@ const files = {
   actions: 'ACTION_BOARD.md',
   build: 'BUILD_TRACKER.md',
   ideas: 'IDEA_VAULT.md',
-  metrics: 'METRICS_LOG.md'
+  metrics: 'METRICS_LOG.md',
+  activity: 'ACTIVITY_LOG.md'
 };
 
 function getLines(md, startsWith) {
@@ -26,15 +27,17 @@ async function loadMd(path) {
 }
 
 async function init() {
-  const [actions, build, ideas] = await Promise.all([
+  const [actions, build, ideas, activity] = await Promise.all([
     loadMd(files.actions),
     loadMd(files.build),
-    loadMd(files.ideas)
+    loadMd(files.ideas),
+    loadMd(files.activity)
   ]);
 
   const actionOpen = getLines(actions, '- [ ]');
   const actionDone = getLines(actions, '- [x]');
   const buildOpen = getLines(build, '- [ ]');
+  const activityItems = getLines(activity, '- ');
   const ideaTitles = ideas
     .split('\n')
     .filter((l) => l.startsWith('## '))
@@ -45,7 +48,7 @@ async function init() {
     { label: 'Open Actions', value: actionOpen.length },
     { label: 'Done Actions', value: actionDone.length },
     { label: 'Open Build Tasks', value: buildOpen.length },
-    { label: 'Top Ideas Tracked', value: ideaTitles.length }
+    { label: 'Recent Activity Items', value: activityItems.length }
   ]);
 
   document.getElementById('todayList').innerHTML = actionOpen
@@ -60,6 +63,12 @@ async function init() {
 
   document.getElementById('ideaList').innerHTML = ideaTitles
     .map((t) => `<li>${t}</li>`)
+    .join('');
+
+  document.getElementById('activityList').innerHTML = activityItems
+    .slice(-8)
+    .reverse()
+    .map((l) => `<li>${l.replace('- ', '')}</li>`)
     .join('');
 }
 
