@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ClearedConnect.io — SCIF Compliance Broker</title>
+    <meta
+      name="description"
+      content="ClearedConnect helps primes and facility teams source SCIF-compliant window film scope and cleared labor quickly, with intake-first project qualification."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav">
+        <a class="logo" href="#">ClearedConnect<span>.io</span></a>
+        <nav>
+          <a href="#services">Services</a>
+          <a href="#process">Process</a>
+          <a href="#intake">Project Intake</a>
+          <a href="#contact" class="btn btn-sm">Book Call</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-grid">
+          <div>
+            <p class="eyebrow">SCIF COMPLIANCE BROKER • PHASE 1</p>
+            <h1>SCIF film scope and cleared labor, without the staffing scramble.</h1>
+            <p class="subhead">
+              ClearedConnect helps prime contractors and secure facility teams execute
+              SCIF-compliant window-film work fast — with vetted cleared trades and an
+              intake-first workflow that reduces project risk.
+            </p>
+            <div class="cta-row">
+              <a href="#contact" class="btn">Book a Confidential Scope Call</a>
+              <a href="#intake" class="btn btn-ghost">Submit Project Intake</a>
+            </div>
+            <ul class="trust-list">
+              <li>Built for defense + classified environments</li>
+              <li>Operator-led network with 30+ years in the field</li>
+              <li>Broker model now, marketplace expansion in progress</li>
+            </ul>
+          </div>
+          <aside class="card stat-card">
+            <h3>Why teams use ClearedConnect</h3>
+            <ul>
+              <li><strong>Speed:</strong> faster access to trusted cleared labor</li>
+              <li><strong>Confidence:</strong> scope matched to secure-site realities</li>
+              <li><strong>Control:</strong> one intake that qualifies work up front</li>
+            </ul>
+            <p class="micro">
+              Today: brokered SCIF compliance staffing. Next: full clearance labor marketplace.
+            </p>
+          </aside>
+        </div>
+      </section>
+
+      <section id="services" class="section">
+        <div class="container">
+          <h2>What we deliver now</h2>
+          <div class="grid-3">
+            <article class="card">
+              <h3>SCIF Scope Qualification</h3>
+              <p>
+                We qualify location, clearance level, timeline, and trade scope before you waste
+                time with mismatched candidates.
+              </p>
+            </article>
+            <article class="card">
+              <h3>Cleared Installer Matching</h3>
+              <p>
+                We source and align cleared professionals with the technical and security demands
+                of your specific project.
+              </p>
+            </article>
+            <article class="card">
+              <h3>Execution Support</h3>
+              <p>
+                From pre-mobilization to closeout, we coordinate communication across project,
+                facility, and security stakeholders.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="process" class="section alt">
+        <div class="container">
+          <h2>How it works</h2>
+          <div class="steps">
+            <div class="step"><span>1</span><p>Submit project intake in 3–5 minutes</p></div>
+            <div class="step"><span>2</span><p>Get rapid qualification and risk flags</p></div>
+            <div class="step"><span>3</span><p>Review matched cleared labor options</p></div>
+            <div class="step"><span>4</span><p>Confirm scope and execute with confidence</p></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="intake" class="section">
+        <div class="container intake-grid">
+          <div>
+            <h2>AI-Assisted Project Intake</h2>
+            <p>
+              Use the intake form to qualify a project. The form generates an on-page readiness
+              score to help prioritize urgent and high-complexity work.
+            </p>
+            <p class="micro">
+              Note: this is a front-end MVP. Connect to Airtable/CRM/Zapier in v2 for automation.
+            </p>
+          </div>
+
+          <form id="intakeForm" class="card form" novalidate>
+            <label>
+              Company Name
+              <input type="text" name="company" required />
+            </label>
+
+            <label>
+              Point of Contact
+              <input type="text" name="contact" required />
+            </label>
+
+            <label>
+              Work Email
+              <input type="email" name="email" required />
+            </label>
+
+            <label>
+              Project Location
+              <input type="text" name="location" required />
+            </label>
+
+            <label>
+              Clearance Environment
+              <select name="clearance" required>
+                <option value="">Select one</option>
+                <option>Confidential</option>
+                <option>Secret</option>
+                <option>Top Secret / SCI</option>
+                <option>SCIF (active)</option>
+              </select>
+            </label>
+
+            <label>
+              Timeline
+              <select name="timeline" required>
+                <option value="">Select one</option>
+                <option value="30">Need support in &lt; 30 days</option>
+                <option value="60">30–60 days</option>
+                <option value="90">60–90 days</option>
+                <option value="120">Planning &gt; 90 days</option>
+              </select>
+            </label>
+
+            <label>
+              Scope Notes
+              <textarea name="scope" rows="4" placeholder="Type, size, access constraints, special requirements"></textarea>
+            </label>
+
+            <button type="submit" class="btn">Run Intake Check</button>
+            <div id="result" class="result" aria-live="polite"></div>
+          </form>
+        </div>
+      </section>
+
+      <section id="contact" class="section alt">
+        <div class="container contact">
+          <h2>Ready to scope your project?</h2>
+          <p>
+            Tell us what needs to get done. We’ll respond with next steps and availability.
+          </p>
+          <a class="btn" href="mailto:hello@clearedconnect.io?subject=Confidential%20Scope%20Call%20Request">
+            Book a Confidential Scope Call
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-row">
+        <p>© <span id="year"></span> ClearedConnect.io</p>
+        <p>SCIF compliance broker now. Cleared labor marketplace next.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
