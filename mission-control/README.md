@@ -16,6 +16,14 @@ A single place to track:
 - `METRICS_LOG.md` — weekly business metrics
 - `dashboard.html` — visual mission-control cockpit
 - `dashboard.css` / `dashboard.js` — dashboard styling + logic
+- `ACTIVITY_LOG.md` — autonomous build timeline
+
+## Dashboard Modules (v2)
+- KPI strip with color-coded status
+- Pipeline funnel visualization
+- Weekly target-vs-actual scoreboard
+- Today actions, build tracker, top ideas
+- Live recent activity feed
 
 ## View Dashboard
 From `mission-control/` run:
