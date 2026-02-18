@@ -120,3 +120,4 @@ Chronological build log for autonomous work by Rock 🗿.
 - [17:04] Drafted one-page mini-deck: mission-control/decks/scif-swing-space-command.md
 - [17:05] Enforced activity-log discipline rule: log updates must be written immediately after meaningful changes (no long gaps).
 - [17:06] Standardized dashboard update protocol to always include current live links for both Scoreboard and Mission Control in the same user update.
+- [17:22] Fixed Mission Control dashboard data freshness: file fetches now use no-store cache + timestamp cache-busting query params.

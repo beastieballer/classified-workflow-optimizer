@@ -49,13 +49,13 @@ function setStats(stats) {
 }
 
 async function loadText(path) {
-  const res = await fetch(path);
+  const res = await fetch(`${path}?ts=${Date.now()}`, { cache: 'no-store' });
   return await res.text();
 }
 
 async function loadJson(path, fallback = {}) {
   try {
-    const res = await fetch(path);
+    const res = await fetch(`${path}?ts=${Date.now()}`, { cache: 'no-store' });
     if (!res.ok) return fallback;
     return await res.json();
   } catch {
