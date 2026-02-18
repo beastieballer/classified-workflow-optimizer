@@ -44,6 +44,17 @@
 3. Capture top 3 recurring access-delay patterns
 4. Convert 1 active delayed project into paid pilot
 
+## Expansion Track C: ShieldSpec Preflight QA (ICD-705 Package Triage)
+- **Current Stage:** VALIDATE
+- **Objective (10 days):** close 1 paid preflight triage sprint
+- **Offer v0:** artifact completeness audit, cross-reference consistency scan, readiness score, owner-assigned fix plan
+
+### ShieldSpec Preflight QA Milestones
+1. Publish one-pager + pricing and turnaround SLA
+2. Conduct 8-target outreach sprint (PM/FSO/security coordinator)
+3. Run 3 validation calls and capture top recurring artifact failure modes
+4. Convert 1 active at-risk package into paid triage pilot
+
 ## Blockers / Risks
 - CRM endpoint not yet live
 - ClearedConnect outreach script + segmentation still incomplete
@@ -52,4 +63,4 @@
 
 ## Notes
 - Model policy: default Codex; ask Alex before model switching during active conversation.
-- Mission Control now running three lanes: ClearedConnect BUILD + AVO VALIDATE + AccessFlow VALIDATE.
+- Mission Control now running four lanes: ClearedConnect BUILD + AVO VALIDATE + AccessFlow VALIDATE + ShieldSpec Preflight QA VALIDATE.
