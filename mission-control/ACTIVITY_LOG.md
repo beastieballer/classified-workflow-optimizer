@@ -104,6 +104,14 @@ Chronological build log for autonomous work by Rock 🗿.
 - [15:02] Reprioritized Action Board top-3 around VCC one-pager and first discovery calls while preserving active ShieldSpec execution.
 - [15:03] Updated Build Tracker to add Expansion Track F (VCC) with 10-day pilot objective and milestones.
 - [15:04] Drafted one-page mini-deck: mission-control/decks/scif-variance-control-cell.md
+- [15:09] Aligned personal goals workspace to Mission Control scoreboard logic (GOAL_VAULT, ACTION_BOARD, BUILD_TRACKER, METRICS_LOG, ACTIVITY_LOG).
+- [15:12] Created unified Life + Business weekly rollup template at scoreboard/WEEKLY_ROLLUP.md.
+- [15:15] Added weekly Sunday 09:00 ET cron automation to prefill Life + Business rollup from both metric logs.
+- [15:18] Built Life + Business Command Deck UI (scoreboard/dashboard.html|css|js) with executive, ops, and action layers.
+- [15:24] Switched web search provider path to Perplexity via OpenRouter and validated provider routing.
+- [15:32] Deployed Scoreboard dashboard to production alias: https://scoreboard-three-gamma.vercel.app.
+- [15:35] Fixed mobile 404 by adding scoreboard/index.html redirect to dashboard route.
+- [15:36] Verified public dashboard routes: / and /dashboard.html live and reachable.
 
 - [17:00] Ran autonomous Mission Control SCIF ideation sweep focused on expansion beyond ClearedConnect/ShieldSpec.
 - [17:01] Added new high-potential concept to Idea Vault: SCIF Swing Space Command (SSC), scored 23/25.
