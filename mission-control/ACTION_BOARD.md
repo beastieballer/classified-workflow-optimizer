@@ -1,16 +1,14 @@
 # ACTION BOARD
 
-## Today (Top 5)
-- [ ] Finalize AccessFlow 48 one-pager (offer, timeline, pricing)
-- [ ] Build target list of 12 contacts (PM/FSO/facility security)
-- [ ] Run 3 fast discovery calls on access-sequencing delays
-- [ ] Draft pilot SOW template for 2-week “Access Rescue Sprint”
-- [ ] Keep ClearedConnect momentum: complete CRM endpoint decision + setup
+## Top 3 Priorities (Today)
+- [ ] Publish ShieldSpec Preflight QA one-pager (scope, SLA, pricing)
+- [ ] Build list of 8 PM/FSO targets and send outreach for package-triage discovery
+- [ ] Run 3 quick calls to validate top accreditation artifact failure modes
 
 ## This Week
+- [ ] Pre-sell 1 paid Preflight QA triage sprint
 - [ ] Run 6 total AccessFlow discovery calls and tag repeated bottlenecks
 - [ ] Attempt pre-sell: secure 1 paid AccessFlow pilot
-- [ ] Draft reusable access-sequencing checklist + escalation matrix
 - [ ] Complete ClearedConnect trust stack + booking CTA update
 - [ ] Schedule 3 confidential scope calls for ClearedConnect
 - [ ] Run first access attestation for both companies (least privilege pass)

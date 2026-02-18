@@ -129,3 +129,23 @@
 - Build a one-page “Access Rescue Sprint” offer with hard deliverables
 - Run 6 discovery calls (PM, FSO, facility/security coordinator)
 - Pre-sell 1 paid pilot for an active delayed project
+
+## 7) ShieldSpec Preflight QA (ICD-705 Package Triage)
+- **Status:** IDEA
+- **Problem:** Teams submit incomplete or inconsistent accreditation artifacts, causing avoidable review cycles and schedule slips.
+- **Business Model:** Fixed-fee preflight package review + optional monthly retainer for ongoing submission QA.
+- **Why we can win:** Leverages Alex's SCIF execution knowledge and can be sold as a fast, tactical service before bigger engagements.
+
+### Score
+- Speed to Revenue: 5
+- Differentiation: 4
+- Founder Edge: 5
+- Build Simplicity: 5
+- Expansion Potential: 4
+- **Total: 23/25**
+
+### 72-Hour Validation Plan
+- Draft one-page “Preflight QA” deliverable checklist + turnaround SLA
+- Reach out to 8 PM/FSO contacts with recent package pain
+- Pre-sell 1 paid triage sprint for an active submission
+
