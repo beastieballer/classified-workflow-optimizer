@@ -1,6 +1,6 @@
 # Mission Control ♜
 
-Venture operating system for Alex + Rook.
+Venture operating system for Alex + Rock.
 
 ## Purpose
 A single place to track:

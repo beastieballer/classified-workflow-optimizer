@@ -22,6 +22,7 @@ Chronological build log for autonomous work by Rook.
 - [19:22] Verified Vercel authentication and completed first production deploy.
 - [19:22] Live permanent Mission Control URL set: https://mission-control-kappa-two.vercel.app
 - [19:08] Enabled cron change text notification workflow (iMessage primary, SMS fallback).
+- [19:12] Updated Mission Control branding from Rook to Rock 🗿.
 - [18:55] Heartbeat maintenance: marked public URL task complete and updated Action Board.
 - [18:56] Added new SCIF-adjacent concept: SCIF Continuity Command (22/25) to Idea Vault.
 - [18:57] Created mini-deck: mission-control/decks/scif-continuity-command.md
