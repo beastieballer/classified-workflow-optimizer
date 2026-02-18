@@ -40,3 +40,8 @@ Federal + defense project timelines are tightening while secure-site friction is
 - One paid pilot closed
 - One referenceable case study (days recovered / idle hours reduced)
 - Repeatable offer language that can be sold in one call
+## Security & Confidentiality Commitment
+- All client emails, blueprints, package artifacts, and site documentation are handled as sensitive information
+- Need-to-know access and controlled sharing only with authorized stakeholders
+- Confidentiality-first operating protocol across intake, delivery, and follow-up
+

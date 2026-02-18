@@ -31,3 +31,8 @@ A 2-week “Accreditation Sprint” service that compresses readiness work into 
 - **ClearedConnect:** supplies surge cleared labor when package gaps require field execution
 - **ShieldSpec:** contributes structured scope discipline and documentation rigor
 - **AVO:** monetizes schedule certainty at the accreditation bottleneck layer
+## Security & Confidentiality Commitment
+- All client emails, blueprints, package artifacts, and site documentation are handled as sensitive information
+- Need-to-know access and controlled sharing only with authorized stakeholders
+- Confidentiality-first operating protocol across intake, delivery, and follow-up
+

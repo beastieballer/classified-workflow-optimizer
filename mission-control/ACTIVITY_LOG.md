@@ -84,3 +84,5 @@ Chronological build log for autonomous work by Rook.
 - [09:06] Drafted mini-deck: mission-control/decks/scif-commissioning-readiness-cell.md
 
 - [09:03] Fixed BUILD_TRACKER lane update after earlier automation edit failure; replaced CRC track with ShieldSpec Preflight QA validation lane.
+- [09:33] Added explicit confidentiality + sensitive-information handling commitments across SCIF landing pages and pitch deck assets.
+

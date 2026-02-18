@@ -27,3 +27,8 @@ Field-grounded SCIF execution expertise + direct understanding of where package 
 - Ship one-page offer
 - Run 3 validation calls
 - Close first paid triage sprint
+## Security & Confidentiality Commitment
+- All client emails, blueprints, package artifacts, and site documentation are handled as sensitive information
+- Need-to-know access and controlled sharing only with authorized stakeholders
+- Confidentiality-first operating protocol across intake, delivery, and follow-up
+
