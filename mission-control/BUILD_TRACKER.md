@@ -2,7 +2,7 @@
 
 ## Active Venture: ClearedConnect.io
 - **Current Stage:** BUILD
-- **Owner:** Alex + Rook
+- **Owner:** Alex + Rock
 - **Objective:** generate qualified scope calls and first brokered deals
 
 ## Current Assets

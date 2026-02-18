@@ -1,6 +1,6 @@
 # ACTIVITY LOG
 
-Chronological build log for autonomous work by Rook.
+Chronological build log for autonomous work by Rock 🗿.
 
 ## 2026-02-17
 - [17:20] Initialized Mission Control system (idea vault, build tracker, action board, metrics log).

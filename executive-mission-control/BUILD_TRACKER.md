@@ -2,7 +2,7 @@
 
 ## Active Venture: Citadel Glass
 - **Current Stage:** BUILD
-- **Owner:** Alex + Rook
+- **Owner:** Alex + Rock
 - **Objective (14 days):** close 1 paid executive residential protection pilot
 
 ## Core Offer: Obsidian Home Defense Program
