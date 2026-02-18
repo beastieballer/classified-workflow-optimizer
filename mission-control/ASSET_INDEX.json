@@ -6,12 +6,10 @@
     { "name": "SecureScope AI", "url": "ideas/securescope-ai.html", "type": "Idea Landing Page" }
   ],
   "pitchDecks": [
-    { "name": "ClearedConnect Investor Deck (HTML)", "url": "decks/clearedconnect-investor-deck.html", "type": "Deck" },
-    { "name": "ClearedConnect Investor Deck (PDF)", "url": "decks/clearedconnect-investor-deck.pdf", "type": "Deck" },
-    { "name": "ShieldSpec Investor Deck (HTML)", "url": "decks/shieldspec-investor-deck.html", "type": "Deck" },
-    { "name": "ShieldSpec Investor Deck (PDF)", "url": "decks/shieldspec-investor-deck.pdf", "type": "Deck" },
-    { "name": "AccessFlow 48 Mini-Deck", "url": "decks/accessflow-48.md", "type": "Mini-Deck" },
-    { "name": "AVO Mini-Deck", "url": "decks/scif-accreditation-velocity-office.md", "type": "Mini-Deck" },
-    { "name": "SCIF Continuity Command Mini-Deck", "url": "decks/scif-continuity-command.md", "type": "Mini-Deck" }
+    { "name": "ClearedConnect Investor Deck (PDF)", "url": "decks/clearedconnect-investor-deck.pdf", "type": "Deck PDF" },
+    { "name": "ShieldSpec Investor Deck (PDF)", "url": "decks/shieldspec-investor-deck.pdf", "type": "Deck PDF" },
+    { "name": "AccessFlow 48 Investor Deck (PDF)", "url": "decks/accessflow-48-investor-deck.pdf", "type": "Deck PDF" },
+    { "name": "AVO Investor Deck (PDF)", "url": "decks/avo-investor-deck.pdf", "type": "Deck PDF" },
+    { "name": "SCIF Continuity Command Investor Deck (PDF)", "url": "decks/scif-continuity-command-investor-deck.pdf", "type": "Deck PDF" }
   ]
 }

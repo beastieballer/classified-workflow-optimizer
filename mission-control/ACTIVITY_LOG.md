@@ -33,6 +33,8 @@ Chronological build log for autonomous work by Rook.
 - [21:39] Added KPI-level link tracking for landing pages and pitch decks via ASSET_INDEX.json.
 - [21:41] Added clean HTML landing pages for new ideas: Continuity Command, AVO, AccessFlow 48, SecureScope AI.
 - [21:42] Added Landing Pages Hub + Pitch Decks Hub panels to Mission Control dashboard.
+- [21:47] Converted AccessFlow 48, AVO, and SCIF Continuity Command investor decks to PDF style.
+- [21:48] Updated Asset Index to prioritize PDF links for all investor pitch decks.
 - [18:55] Heartbeat maintenance: marked public URL task complete and updated Action Board.
 - [18:56] Added new SCIF-adjacent concept: SCIF Continuity Command (22/25) to Idea Vault.
 - [18:57] Created mini-deck: mission-control/decks/scif-continuity-command.md
