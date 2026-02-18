@@ -3,7 +3,8 @@
     { "name": "SCIF Continuity Command", "url": "ideas/scif-continuity-command.html", "type": "Idea Landing Page" },
     { "name": "SCIF Accreditation Velocity Office (AVO)", "url": "ideas/scif-accreditation-velocity-office.html", "type": "Idea Landing Page" },
     { "name": "AccessFlow 48", "url": "ideas/accessflow-48.html", "type": "Idea Landing Page" },
-    { "name": "SecureScope AI", "url": "ideas/securescope-ai.html", "type": "Idea Landing Page" }
+    { "name": "SecureScope AI", "url": "ideas/securescope-ai.html", "type": "Idea Landing Page" },
+    { "name": "ShieldSpec Preflight QA", "url": "ideas/shieldspec-preflight-qa.html", "type": "Idea Landing Page" }
   ],
   "pitchDecks": [
     { "name": "ClearedConnect Investor Deck (PDF)", "url": "decks/clearedconnect-investor-deck.pdf", "type": "Deck PDF" },
