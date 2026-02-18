@@ -4,14 +4,16 @@
     { "name": "SCIF Accreditation Velocity Office (AVO)", "url": "ideas/scif-accreditation-velocity-office.html", "type": "Idea Landing Page" },
     { "name": "AccessFlow 48", "url": "ideas/accessflow-48.html", "type": "Idea Landing Page" },
     { "name": "SecureScope AI", "url": "ideas/securescope-ai.html", "type": "Idea Landing Page" },
-    { "name": "ShieldSpec Preflight QA", "url": "ideas/shieldspec-preflight-qa.html", "type": "Idea Landing Page" }
+    { "name": "ShieldSpec Preflight QA", "url": "ideas/shieldspec-preflight-qa.html", "type": "Idea Landing Page" },
+    { "name": "SCIF Change Order Command (COC)", "url": "ideas/scif-change-order-command.html", "type": "Idea Landing Page" }
   ],
   "pitchDecks": [
     { "name": "ClearedConnect Investor Deck (PDF)", "url": "decks/clearedconnect-investor-deck.pdf", "type": "Deck PDF" },
     { "name": "ShieldSpec Investor Deck (PDF)", "url": "decks/shieldspec-investor-deck.pdf", "type": "Deck PDF" },
     { "name": "AccessFlow 48 Investor Deck (PDF)", "url": "decks/accessflow-48-investor-deck.pdf", "type": "Deck PDF" },
     { "name": "AVO Investor Deck (PDF)", "url": "decks/avo-investor-deck.pdf", "type": "Deck PDF" },
-    { "name": "SCIF Continuity Command Investor Deck (PDF)", "url": "decks/scif-continuity-command-investor-deck.pdf", "type": "Deck PDF" }
+    { "name": "SCIF Continuity Command Investor Deck (PDF)", "url": "decks/scif-continuity-command-investor-deck.pdf", "type": "Deck PDF" },
+    { "name": "SCIF Change Order Command Investor Deck (PDF)", "url": "decks/scif-change-order-command-investor-deck.pdf", "type": "Deck PDF" }
   ],
   "salesAssets": [
     { "name": "ShieldSpec Preflight QA One-Pager (MD)", "url": "sales/SHIELDSPEC_PREFLIGHT_QA_ONE_PAGER.md", "type": "Sales Asset" },
