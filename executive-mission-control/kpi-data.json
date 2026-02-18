@@ -1,0 +1,76 @@
+{
+  "kpis": [
+    {
+      "id": "outreach",
+      "label": "Outreach Sent",
+      "value": 0,
+      "target": 15,
+      "unit": "messages",
+      "status": "track",
+      "details": [
+        "Target list: EA + Family Office + Corporate Security",
+        "Use 3-touch cadence: initial, follow-up, close loop",
+        "Daily minimum: 5 high-quality sends"
+      ],
+      "nextActions": [
+        "Populate first 15 targets",
+        "Send first 5 personalized messages",
+        "Log replies within 15 minutes"
+      ]
+    },
+    {
+      "id": "calls",
+      "label": "Calls Booked",
+      "value": 0,
+      "target": 5,
+      "unit": "calls",
+      "status": "risk",
+      "details": [
+        "Goal: 20-min Executive Fit Calls",
+        "Offer focus: Obsidian Private / Signature",
+        "Priority buyers: EA, Family Office, Security Lead"
+      ],
+      "nextActions": [
+        "Offer two concrete time windows in every message",
+        "Tighten opener + social proof sentence",
+        "Track booked vs pending in one list"
+      ]
+    },
+    {
+      "id": "proposals",
+      "label": "Proposals Advanced",
+      "value": 0,
+      "target": 2,
+      "unit": "proposals",
+      "status": "risk",
+      "details": [
+        "Proposal pack should include tier, timeline, and confidentiality protocol",
+        "Keep proposal turnaround < 24 hours",
+        "Include explicit scope boundaries"
+      ],
+      "nextActions": [
+        "Finalize proposal template",
+        "Add trust strip + confidentiality commitments",
+        "Create pricing option matrix"
+      ]
+    },
+    {
+      "id": "pilot",
+      "label": "Paid Pilot",
+      "value": 0,
+      "target": 1,
+      "unit": "close",
+      "status": "risk",
+      "details": [
+        "Objective: close one Obsidian pilot in 7 days",
+        "Preferred tier: Private or Signature",
+        "Use fast-start onboarding with NDA-first flow"
+      ],
+      "nextActions": [
+        "Pre-qualify urgency and decision owner",
+        "Use 48-hour fast-start option",
+        "Close with simple kickoff checklist"
+      ]
+    }
+  ]
+}

@@ -3,31 +3,64 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Executive Mission Control</title>
+  <title>Executive Mission Control — Jarvis</title>
   <link rel="stylesheet" href="dashboard.css" />
 </head>
 <body>
-  <header>
-    <h1>Executive Mission Control</h1>
-    <p>Citadel Glass + Obsidian Home Defense</p>
+  <header class="hero">
+    <div>
+      <h1>Executive Mission Control</h1>
+      <p>Citadel Glass • Obsidian Home Defense • Shadow Chief of Staff</p>
+    </div>
+    <a class="btn" href="links-hub.html">Open Links Hub</a>
   </header>
+
   <main>
     <section class="panel">
-      <h2>Quick Links</h2>
-      <ul>
-        <li><a href="links-hub.html">links-hub.html (All polished links)</a></li>
-        <li><a href="ideas/citadel-glass.html">ideas/citadel-glass.html</a></li>
-        <li><a href="decks/citadel-glass-executive-deck.html">decks/citadel-glass-executive-deck.html</a></li>
-        <li><a href="decks/citadel-glass-executive-deck.pdf">decks/citadel-glass-executive-deck.pdf</a></li>
-        <li><a href="action-board.html">action-board.html</a></li>
-        <li><a href="build-tracker.html">build-tracker.html</a></li>
-        <li><a href="idea-vault.html">idea-vault.html</a></li>
-        <li><a href="activity-log.html">activity-log.html</a></li>
-        <li><a href="positioning.html">positioning.html</a></li>
-        <li><a href="obsidian-one-pager.html">obsidian-one-pager.html</a></li>
-        <li><a href="outreach-scripts.html">outreach-scripts.html</a></li>
-      </ul>
+      <h2>Actionable KPIs (tap a card)</h2>
+      <div id="kpiGrid" class="kpi-grid"></div>
+    </section>
+
+    <section id="kpiDetail" class="panel hidden">
+      <h2 id="kpiTitle">KPI Detail</h2>
+      <p id="kpiMeta" class="muted"></p>
+      <div class="two-col">
+        <div>
+          <h3>Context</h3>
+          <ul id="kpiDetails"></ul>
+        </div>
+        <div>
+          <h3>Next Actions</h3>
+          <ul id="kpiActions"></ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel two-col">
+      <div>
+        <h2>Command Docs</h2>
+        <ul>
+          <li><a href="SHADOW_COS_BLUEPRINT.md">Shadow CoS Blueprint</a></li>
+          <li><a href="FOUNDER_OPERATING_SYSTEM.md">Founder Operating System</a></li>
+          <li><a href="DAILY_WAR_PLAN_TEMPLATE.md">Daily War Plan Template</a></li>
+          <li><a href="ACTION_BOARD.md">Action Board</a></li>
+          <li><a href="BUILD_TRACKER.md">Build Tracker</a></li>
+          <li><a href="ACTIVITY_LOG.md">Activity Log</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Shipped Assets</h2>
+        <ul>
+          <li><a href="ideas/citadel-glass.html">Citadel Landing Page</a></li>
+          <li><a href="obsidian-one-pager.html">Obsidian One-Pager (HTML)</a></li>
+          <li><a href="outreach-scripts.html">Outreach Scripts (HTML)</a></li>
+          <li><a href="decks/citadel-glass-executive-deck.html">Executive Deck (HTML)</a></li>
+          <li><a href="decks/citadel-glass-executive-deck.pdf">Executive Deck (PDF)</a></li>
+        </ul>
+      </div>
     </section>
   </main>
+
+  <script src="dashboard.js"></script>
 </body>
 </html>
