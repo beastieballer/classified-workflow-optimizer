@@ -11,3 +11,7 @@
 
 - [09:19] Fixed executive mission control root 404 by adding index redirect to /dashboard.html.
 - [09:19] Stored mobile mode protocol in memory for concise phone-first responses.
+
+- [09:24] Completed full polish sweep: converted core executive docs to mobile-friendly HTML pages.
+- [09:24] Created unified polished Links Hub for all executive mission control assets.
+- [09:25] Updated dashboard to prioritize polished HTML links.
