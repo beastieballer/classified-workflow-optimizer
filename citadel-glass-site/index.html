@@ -3,200 +3,237 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Citadel Glass — Quiet Strength for Critical Homes</title>
+  <title>Citadel Glass — Executive Residential Protection</title>
   <meta name="description" content="Discreet residential privacy and glass-hardening solutions for executive households." />
-  <style>
-    :root {
-      --bg: #0b1016;
-      --surface: #131a23;
-      --surface-2: #18212d;
-      --text: #e9edf2;
-      --muted: #b5c0ce;
-      --line: #273246;
-      --accent: #90c2ff;
-      --accent-2: #d8e9ff;
-    }
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      background: radial-gradient(circle at 10% 10%, #162131 0%, var(--bg) 45%);
-      color: var(--text);
-      line-height: 1.55;
-    }
-    .container { width: min(1100px, 92vw); margin: 0 auto; }
-    section { padding: 3.5rem 0; border-bottom: 1px solid var(--line); }
-    h1, h2, h3 { line-height: 1.2; margin: 0 0 .8rem; }
-    h1 { font-size: clamp(1.9rem, 4vw, 3.2rem); }
-    h2 { font-size: clamp(1.4rem, 2.5vw, 2rem); }
-    h3 { font-size: clamp(1.1rem, 2vw, 1.35rem); }
-    p { margin: 0 0 1rem; color: var(--muted); }
-    .hero { padding-top: 5rem; }
-    .eyebrow { color: var(--accent); letter-spacing: .08em; text-transform: uppercase; font-size: .78rem; font-weight: 700; }
-    .subhead { font-size: clamp(1rem, 2vw, 1.25rem); color: var(--accent-2); max-width: 70ch; }
-    .cta-row { display: flex; flex-wrap: wrap; gap: .75rem; margin-top: 1.2rem; }
-    .btn {
-      display: inline-block;
-      padding: .72rem 1rem;
-      border-radius: .65rem;
-      text-decoration: none;
-      font-weight: 600;
-      font-size: .95rem;
-      border: 1px solid transparent;
-    }
-    .btn-primary { background: var(--accent); color: #0a1321; }
-    .btn-secondary { border-color: var(--line); color: var(--text); background: rgba(255,255,255,0.02); }
-    .trust-line { margin-top: 1rem; font-size: .9rem; color: #cfe0f7; }
-    .grid { display: grid; gap: 1rem; }
-    .grid-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-    .card {
-      background: linear-gradient(180deg, var(--surface-2), var(--surface));
-      border: 1px solid var(--line);
-      border-radius: .85rem;
-      padding: 1rem;
-    }
-    ul { margin: 0; padding-left: 1.1rem; color: var(--muted); }
-    li { margin-bottom: .35rem; }
-    .price { color: var(--accent-2); font-weight: 700; margin-top: .65rem; }
-    .steps { counter-reset: step; display: grid; gap: .8rem; }
-    .step { background: var(--surface); border: 1px solid var(--line); border-radius: .8rem; padding: .95rem; }
-    .step h3::before {
-      counter-increment: step;
-      content: counter(step) ") ";
-      color: var(--accent);
-    }
-    details { border: 1px solid var(--line); border-radius: .7rem; padding: .8rem .9rem; background: var(--surface); }
-    details + details { margin-top: .6rem; }
-    summary { cursor: pointer; font-weight: 600; color: var(--text); }
-    .disclaimer {
-      background: #111925;
-      border: 1px solid #2e3a4f;
-      border-left: 4px solid #8dbfff;
-      border-radius: .8rem;
-      padding: 1rem;
-      color: #ced8e6;
-      font-size: .94rem;
-    }
-    footer { padding: 2rem 0 3rem; color: #aeb9c8; text-align: center; }
-    @media (max-width: 900px) { .grid-3 { grid-template-columns: 1fr; } }
-  </style>
+  <link rel="stylesheet" href="./styles.css" />
 </head>
 <body>
-  <main>
-    <section class="hero">
-      <div class="container">
-        <p class="eyebrow">Citadel Glass</p>
-        <h1>Quiet Strength for Critical Homes</h1>
-        <p class="subhead">Discreet residential privacy and glass-hardening solutions for executive households who expect white-glove execution and uncompromising professionalism.</p>
-        <p>Citadel Glass helps high-profile families reduce exposure and improve residential resilience with premium privacy and security film solutions. Every engagement is built around discretion, clean coordination, and precise installation standards.</p>
-        <div class="cta-row">
-          <a class="btn btn-primary" href="#contact">Book a 20-Minute Executive Fit Call</a>
-          <a class="btn btn-secondary" href="#contact">Request the Obsidian One-Page Overview</a>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <div class="ambient ambient-1" aria-hidden="true"></div>
+  <div class="ambient ambient-2" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Citadel Glass home">
+        <span class="logo-placeholder">CG</span>
+        <span class="brand-text">Citadel Glass</span>
+      </a>
+
+      <nav class="main-nav" aria-label="Primary">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-list">Menu</button>
+        <ul id="nav-list" class="nav-list">
+          <li><a href="#services">Services</a></li>
+          <li><a href="#process">Process</a></li>
+          <li><a href="#trust">Trust</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section id="top" class="section hero">
+      <div class="container hero-grid">
+        <div class="reveal">
+          <p class="eyebrow">Executive Residential Protection</p>
+          <h1>Quiet Strength for Critical Homes</h1>
+          <p class="lead">Discreet privacy and glass-hardening solutions for leadership households that expect white-glove execution, tight communication, and professional protocol.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="mailto:hello@citadelglass.com?subject=Executive%20Fit%20Call">Book Executive Fit Call</a>
+            <a class="btn btn-ghost" href="mailto:hello@citadelglass.com?subject=Obsidian%20Overview">Request Obsidian Overview</a>
+          </div>
+          <p class="trust-note">NDA-first onboarding available • Discreet scheduling protocol • Concierge delivery</p>
         </div>
-        <p class="trust-line">NDA-first onboarding available.</p>
+
+        <div class="hero-visual reveal">
+          <div class="hero-frame glass-shimmer">
+            <img src="./assets/hero-residence.svg" alt="Executive residence visual placeholder" />
+          </div>
+          <div class="hero-metrics">
+            <div class="metric-card">
+              <strong>20 min</strong>
+              <span>Executive fit call</span>
+            </div>
+            <div class="metric-card">
+              <strong>3 tiers</strong>
+              <span>Private • Signature • Estate</span>
+            </div>
+            <div class="metric-card">
+              <strong>Protocol</strong>
+              <span>Discreet, low-visibility execution</span>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section>
+    <section id="services" class="section">
       <div class="container">
-        <h2>Built for Leadership Households</h2>
-        <p>When privacy, scheduling control, and execution quality matter, Citadel Glass delivers a specialized residential protection lane for principals, founders, and senior operators.</p>
-        <div class="grid grid-3">
-          <article class="card">
-            <h3>Discretion First</h3>
-            <p>Low-visibility process, minimal disruption, professional protocol.</p>
-          </article>
-          <article class="card">
-            <h3>Protection That Performs</h3>
-            <p>Practical hardening outcomes grounded in tested film applications.</p>
-          </article>
-          <article class="card">
-            <h3>White-Glove Execution</h3>
-            <p>Concierge planning, disciplined communication, and clean install standards.</p>
-          </article>
+        <div class="section-head reveal">
+          <p class="eyebrow">Services</p>
+          <h2>The Obsidian Program</h2>
+          <p class="lead">A premium residential lane combining privacy strategy, security film hardening, and disciplined install execution.</p>
         </div>
-      </div>
-    </section>
 
-    <section>
-      <div class="container">
-        <h2>The Obsidian Home Defense Program</h2>
-        <p>A premium residential program combining privacy film strategy, security film hardening, and discreet delivery protocol.</p>
-        <div class="grid grid-3">
-          <article class="card">
+        <div class="cards-grid reveal">
+          <article class="service-card">
             <h3>Private Tier</h3>
+            <p>Focused hardening for high-priority zones.</p>
             <ul>
-              <li>High-priority zone assessment</li>
               <li>Core privacy + security film package</li>
+              <li>Priority zone assessment</li>
               <li>Post-install walkthrough</li>
             </ul>
-            <p class="price">Typical investment: $18,000–$40,000</p>
+            <p class="price">Typical investment: $18k–$40k</p>
           </article>
-          <article class="card">
+
+          <article class="service-card">
             <h3>Signature Tier</h3>
+            <p>Expanded multi-zone strategy for principal residences.</p>
             <ul>
               <li>Enhanced threat-point prioritization</li>
-              <li>Multi-zone privacy/security strategy</li>
+              <li>Multi-zone protection plan</li>
               <li>90-day performance check-in</li>
             </ul>
-            <p class="price">Typical investment: $40,000–$95,000</p>
+            <p class="price">Typical investment: $40k–$95k</p>
           </article>
-          <article class="card">
+
+          <article class="service-card">
             <h3>Estate Tier</h3>
+            <p>Concierge multi-phase coverage for complex properties.</p>
             <ul>
-              <li>Primary residence + optional secondary structures</li>
-              <li>Concierge multi-phase implementation</li>
-              <li>Annual refresh + priority support path</li>
+              <li>Primary residence + secondary structures</li>
+              <li>Multi-phase deployment</li>
+              <li>Annual refresh support lane</li>
             </ul>
-            <p class="price">Typical investment: $95,000–$250,000+</p>
+            <p class="price">Typical investment: $95k–$250k+</p>
+          </article>
+
+          <article class="service-card service-card-graphic">
+            <h3>Visual Planning Layer</h3>
+            <p>Graphics-driven scope planning so all stakeholders see the same map before install day.</p>
+            <img src="./assets/planning-graphic.svg" alt="Planning graphic showing zones and sequencing" />
           </article>
         </div>
       </div>
     </section>
 
-    <section>
+    <section id="process" class="section">
       <div class="container">
-        <h2>A Controlled, Four-Step Engagement</h2>
-        <div class="steps">
-          <article class="step"><h3>Executive Fit Call (20 minutes)</h3><p>We confirm goals, timeline, and household constraints. If there is mutual fit, we define the next step.</p></article>
-          <article class="step"><h3>Secure Intake + Planning</h3><p>We gather only necessary details, establish communications protocol, and align on scheduling windows.</p></article>
-          <article class="step"><h3>Discreet On-Site Execution</h3><p>Our team executes to plan with site discipline, clean finish standards, and minimal household disruption.</p></article>
-          <article class="step"><h3>Structured Handoff</h3><p>You receive a clear walkthrough, care guidance, and support path based on your selected tier.</p></article>
+        <div class="section-head reveal">
+          <p class="eyebrow">Process</p>
+          <h2>Controlled Four-Step Execution</h2>
+        </div>
+
+        <ol class="timeline reveal">
+          <li class="timeline-item">
+            <h3>Executive Fit Call</h3>
+            <p>Quick qualification on priorities, timeline, and site constraints.</p>
+          </li>
+          <li class="timeline-item">
+            <h3>Secure Intake</h3>
+            <p>Need-to-know information only. Protocol and communication lanes are defined early.</p>
+          </li>
+          <li class="timeline-item">
+            <h3>Discreet Deployment</h3>
+            <p>Site discipline, clean install standards, and low-disruption execution windows.</p>
+          </li>
+          <li class="timeline-item">
+            <h3>Structured Handoff</h3>
+            <p>Clear closeout, care guidance, and support path by tier.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="trust" class="section">
+      <div class="container trust-grid">
+        <div class="reveal">
+          <p class="eyebrow">Trust</p>
+          <h2>Built for Principals, Family Offices, and Senior Operators</h2>
+          <ul class="trust-list">
+            <li>Discretion-first engagement model</li>
+            <li>Concierge scheduling and communication discipline</li>
+            <li>Coordination with estate/security staff as needed</li>
+          </ul>
+        </div>
+
+        <div class="trust-media reveal">
+          <div class="gallery-grid">
+            <figure class="gallery-card"><img src="./assets/gallery-1.svg" alt="Residence perimeter visual placeholder" /><figcaption>Perimeter visibility reduction planning</figcaption></figure>
+            <figure class="gallery-card"><img src="./assets/gallery-2.svg" alt="Interior privacy visual placeholder" /><figcaption>Interior privacy layer strategy</figcaption></figure>
+            <figure class="gallery-card"><img src="./assets/gallery-3.svg" alt="Install sequence visual placeholder" /><figcaption>Installation sequencing control</figcaption></figure>
+          </div>
         </div>
       </div>
     </section>
 
-    <section>
+    <section id="faq" class="section">
       <div class="container">
-        <h2>Frequently Asked Questions</h2>
-        <details><summary>Who is this designed for?</summary><p>Citadel Glass is purpose-built for executive households, family offices, and principals who require discreet residential hardening with high service standards.</p></details>
-        <details><summary>Do your films make glass “unbreakable”?</summary><p>No. Security films are designed to improve glass retention and delay breach progression in many scenarios, but they do not make glass indestructible or guarantee specific outcomes.</p></details>
-        <details><summary>Can you coordinate with estate managers or security teams?</summary><p>Yes. We regularly coordinate with executive assistants, chiefs of staff, estate managers, and security stakeholders under defined protocol.</p></details>
-      </div>
-    </section>
+        <div class="section-head reveal">
+          <p class="eyebrow">FAQ</p>
+          <h2>Answers for Security-Conscious Households</h2>
+        </div>
 
-    <section>
-      <div class="container">
-        <h2>Important Performance Disclaimer</h2>
-        <div class="disclaimer">
-          Citadel Glass solutions are intended to improve privacy, reduce visibility, and strengthen glass performance characteristics. No film or installation method can guarantee prevention of forced entry, eliminate all risk, or replace comprehensive physical security planning. Performance depends on glass type, frame condition, installation quality, and event-specific factors.
+        <div class="faq-list reveal" data-accordion>
+          <article class="faq-item">
+            <h3>
+              <button aria-expanded="false" aria-controls="faq-1">Who is Citadel designed for?</button>
+            </h3>
+            <div id="faq-1" role="region" hidden>
+              <p>Executive households, principals, and family offices that require discreet residential hardening with high service standards.</p>
+            </div>
+          </article>
+
+          <article class="faq-item">
+            <h3>
+              <button aria-expanded="false" aria-controls="faq-2">Do films make glass unbreakable?</button>
+            </h3>
+            <div id="faq-2" role="region" hidden>
+              <p>No. Films can improve retention and delay breach progression in many scenarios, but cannot guarantee prevention of forced entry.</p>
+            </div>
+          </article>
+
+          <article class="faq-item">
+            <h3>
+              <button aria-expanded="false" aria-controls="faq-3">Can you coordinate with our team?</button>
+            </h3>
+            <div id="faq-3" role="region" hidden>
+              <p>Yes. We coordinate with executive assistants, chiefs of staff, estate managers, and security stakeholders under defined protocol.</p>
+            </div>
+          </article>
         </div>
       </div>
     </section>
 
-    <section id="contact">
+    <section id="contact" class="section cta">
       <div class="container">
-        <h2>Protect Privacy. Preserve Normalcy.</h2>
-        <p>If you’re evaluating discreet residential hardening for a leadership household, start with a private 20-minute fit call.</p>
-        <div class="cta-row">
-          <a class="btn btn-primary" href="mailto:hello@citadelglass.com?subject=Executive%20Fit%20Call">Book a 20-Minute Executive Fit Call</a>
-          <a class="btn btn-secondary" href="mailto:hello@citadelglass.com?subject=Obsidian%20One-Page%20Overview">Request the Obsidian One-Page Overview</a>
+        <div class="cta-inner reveal">
+          <p class="eyebrow">Private by Design</p>
+          <h2>Protect Privacy. Preserve Normalcy.</h2>
+          <p>Start with a private fit call. If there is mutual fit, we’ll define a discreet execution plan that matches your household operations.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="mailto:hello@citadelglass.com?subject=Executive%20Fit%20Call">Book a 20-Minute Call</a>
+            <a class="btn btn-ghost" href="mailto:hello@citadelglass.com?subject=Obsidian%20One-Page%20Overview">Request One-Page Overview</a>
+          </div>
+          <p class="disclaimer">Performance disclaimer: No film or installation method can guarantee prevention of forced entry or elimination of all risk. Performance depends on glass type, frame condition, installation quality, and event-specific factors.</p>
         </div>
       </div>
     </section>
   </main>
-  <footer>
-    Private by design. Strong by default.
+
+  <div class="mobile-contact-bar" aria-label="Quick contact actions">
+    <a href="mailto:hello@citadelglass.com?subject=Executive%20Fit%20Call">Email</a>
+    <a href="tel:+12025550109">Call</a>
+    <a href="#contact">Book</a>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container">© <span id="year"></span> Citadel Glass. Private by design. Strong by default.</div>
   </footer>
+
+  <script src="./script.js" defer></script>
 </body>
 </html>

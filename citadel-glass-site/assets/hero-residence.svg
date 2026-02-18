@@ -1,0 +1,21 @@
+<svg width="1200" height="760" viewBox="0 0 1200 760" fill="none" xmlns="http://www.w3.org/2000/svg">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#233247"/>
+    <stop offset="100%" stop-color="#0f1825"/>
+  </linearGradient>
+  <linearGradient id="glass" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#6fa8ff" stop-opacity="0.35"/>
+    <stop offset="100%" stop-color="#6fa8ff" stop-opacity="0.08"/>
+  </linearGradient>
+</defs>
+<rect width="1200" height="760" rx="28" fill="url(#bg)"/>
+<rect x="60" y="420" width="1080" height="220" rx="12" fill="#121E2D"/>
+<rect x="180" y="250" width="840" height="260" rx="14" fill="#162334" stroke="#3A5578"/>
+<rect x="220" y="290" width="220" height="180" rx="8" fill="url(#glass)" stroke="#628CC8"/>
+<rect x="490" y="290" width="220" height="180" rx="8" fill="url(#glass)" stroke="#628CC8"/>
+<rect x="760" y="290" width="220" height="180" rx="8" fill="url(#glass)" stroke="#628CC8"/>
+<circle cx="1020" cy="120" r="44" fill="#C8A96B" fill-opacity="0.25"/>
+<path d="M90 610H1110" stroke="#2F4563" stroke-width="3"/>
+<text x="88" y="90" fill="#D7E6FC" font-size="34" font-family="Inter, Arial">Executive Residence — Visual Placeholder</text>
+</svg>

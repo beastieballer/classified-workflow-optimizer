@@ -1,0 +1,14 @@
+<svg width="800" height="420" viewBox="0 0 800 420" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="800" height="420" rx="20" fill="#101826"/>
+<rect x="40" y="60" width="260" height="120" rx="10" fill="#18263A" stroke="#456186"/>
+<rect x="330" y="60" width="200" height="120" rx="10" fill="#18263A" stroke="#456186"/>
+<rect x="560" y="60" width="200" height="120" rx="10" fill="#18263A" stroke="#456186"/>
+<rect x="40" y="230" width="220" height="120" rx="10" fill="#18263A" stroke="#456186"/>
+<rect x="300" y="230" width="220" height="120" rx="10" fill="#18263A" stroke="#456186"/>
+<rect x="560" y="230" width="200" height="120" rx="10" fill="#18263A" stroke="#456186"/>
+<path d="M300 120H330" stroke="#C7A66A" stroke-width="3"/>
+<path d="M530 120H560" stroke="#C7A66A" stroke-width="3"/>
+<path d="M260 290H300" stroke="#C7A66A" stroke-width="3"/>
+<path d="M520 290H560" stroke="#C7A66A" stroke-width="3"/>
+<text x="52" y="42" fill="#D8E7FD" font-size="24" font-family="Inter, Arial">Scope & Sequencing Graphic</text>
+</svg>

@@ -50,4 +50,19 @@
   } else {
     revealItems.forEach((item) => item.classList.add('in-view'));
   }
+
+  // subtle ambient parallax for desktop polish
+  if (!prefersReducedMotion) {
+    const a1 = document.querySelector('.ambient-1');
+    const a2 = document.querySelector('.ambient-2');
+    window.addEventListener('pointermove', (e) => {
+      const x = (e.clientX / window.innerWidth - 0.5) * 8;
+      const y = (e.clientY / window.innerHeight - 0.5) * 8;
+      if (a1) a1.style.transform = `translate(${x}px, ${y}px)`;
+      if (a2) a2.style.transform = `translate(${-x}px, ${-y}px)`;
+    });
+  }
+
+  const y = document.getElementById('year');
+  if (y) y.textContent = new Date().getFullYear();
 })();
