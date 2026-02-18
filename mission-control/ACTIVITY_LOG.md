@@ -65,3 +65,5 @@ Chronological build log for autonomous work by Rook.
 - [07:57] Built polished client-facing ShieldSpec one-pager HTML for PDF delivery.
 - [07:58] Exported ShieldSpec one-pager to PDF and saved in sales pack.
 - [07:58] Prepared first outreach batch for 8 PM/FSO/security contacts (paste-ready).
+
+- [08:00] Added 8-contact intake CSV to quickly personalize ShieldSpec outreach batch.
