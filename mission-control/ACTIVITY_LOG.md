@@ -74,3 +74,6 @@ Chronological build log for autonomous work by Rook.
 
 - [08:13] Created dedicated idea landing page for ShieldSpec Preflight QA.
 - [08:13] Added ShieldSpec Preflight QA page to ASSET_INDEX Landing Pages Hub.
+
+- [08:16] Standardized CTA/footer style across AVO, AccessFlow 48, and SCIF Continuity Command landing pages.
+- [08:16] Added direct Investor Deck PDF button to all three non-ShieldSpec idea pages.
