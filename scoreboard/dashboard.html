@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Life + Business Command Deck</title>
+    <link rel="stylesheet" href="dashboard.css" />
+  </head>
+  <body>
+    <div class="bg-grid"></div>
+    <header>
+      <h1>Life + Business Command Deck 👾</h1>
+      <p>Single scoreboard for personal execution + venture momentum</p>
+    </header>
+
+    <main>
+      <section class="grid" id="stats"></section>
+
+      <section class="panel two-col">
+        <div>
+          <h2>Executive Layer</h2>
+          <div id="executive"></div>
+        </div>
+        <div>
+          <h2>Trend (vs prior week)</h2>
+          <div id="trend" class="trend-list"></div>
+        </div>
+      </section>
+
+      <section class="panel two-col">
+        <div>
+          <h2>Ops Layer — Personal</h2>
+          <ul id="personalOps"></ul>
+        </div>
+        <div>
+          <h2>Ops Layer — Business</h2>
+          <ul id="businessOps"></ul>
+        </div>
+      </section>
+
+      <section class="panel">
+        <h2>Action Layer — Unified Top 3</h2>
+        <ol id="top3"></ol>
+        <h3>Blockers / Risks</h3>
+        <ul id="blockers"></ul>
+      </section>
+
+      <section class="panel">
+        <h2>Source Files</h2>
+        <div class="links">
+          <a href="../scoreboard/WEEKLY_ROLLUP.md">scoreboard/WEEKLY_ROLLUP.md</a>
+          <a href="../personal/METRICS_LOG.md">personal/METRICS_LOG.md</a>
+          <a href="../personal/ACTION_BOARD.md">personal/ACTION_BOARD.md</a>
+          <a href="../mission-control/METRICS_LOG.md">mission-control/METRICS_LOG.md</a>
+          <a href="../mission-control/ACTION_BOARD.md">mission-control/ACTION_BOARD.md</a>
+          <a href="../mission-control/BUILD_TRACKER.md">mission-control/BUILD_TRACKER.md</a>
+        </div>
+      </section>
+    </main>
+
+    <script src="dashboard.js"></script>
+  </body>
+</html>

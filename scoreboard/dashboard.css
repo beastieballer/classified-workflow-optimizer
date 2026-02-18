@@ -1,0 +1,31 @@
+:root {
+  --bg: #0a1020;
+  --panel: #0f1d3a;
+  --line: #2b4579;
+  --text: #e6eeff;
+  --muted: #9db1df;
+  --blue: #5fa4ff;
+  --green: #33d17a;
+  --amber: #ffbf47;
+  --red: #ff6b6b;
+}
+*{box-sizing:border-box}
+body{font-family:Inter,system-ui,sans-serif;margin:0;color:var(--text);background:radial-gradient(circle at 20% 0%, #13274d 0%, var(--bg) 45%)}
+.bg-grid{position:fixed;inset:0;pointer-events:none;background-image:linear-gradient(rgba(95,164,255,.07) 1px, transparent 1px),linear-gradient(90deg, rgba(95,164,255,.07) 1px, transparent 1px);background-size:28px 28px;mask-image:radial-gradient(circle at 50% 0%, black, transparent 70%)}
+header{padding:1rem;border-bottom:1px solid var(--line);background:rgba(14,24,48,.86);position:sticky;top:0;backdrop-filter:blur(8px);z-index:10}
+header h1{margin:0} header p{margin:.25rem 0 0;color:var(--muted)}
+main{width:min(1200px,94vw);margin:1rem auto 2rem;position:relative;z-index:2}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:.8rem}
+.card{background:linear-gradient(180deg,#101d3a 0%,#0d1831 100%);border:1px solid var(--line);border-left:4px solid var(--blue);border-radius:12px;padding:.8rem}
+.card.good{border-left-color:var(--green)} .card.warn{border-left-color:var(--amber)} .card.bad{border-left-color:var(--red)}
+.card h3{margin:0 0 .3rem;font-size:.85rem;color:var(--muted)} .card .v{font-size:1.3rem;font-weight:800}
+.panel{margin-top:1rem;background:linear-gradient(180deg,#101c37 0%,#0d1730 100%);border:1px solid var(--line);border-radius:12px;padding:1rem}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+ul,ol{margin:.4rem 0 0;padding-left:1.1rem} li{margin:.32rem 0}
+a{color:#89b8ff}
+.links{display:flex;flex-wrap:wrap;gap:.6rem}
+.badge{font-size:.75rem;padding:.12rem .45rem;border-radius:999px;border:1px solid}
+.badge.good{color:#bff7d4;border-color:#2f8f62}.badge.warn{color:#ffe3a6;border-color:#936d1f}.badge.bad{color:#ffc4c4;border-color:#954040}
+.exec-row{display:flex;justify-content:space-between;align-items:center;margin:.4rem 0;padding:.35rem .45rem;background:#132344;border:1px solid #29457e;border-radius:8px}
+.trend-list .item{display:flex;justify-content:space-between;margin:.36rem 0}
+@media (max-width: 900px){.two-col{grid-template-columns:1fr}}
