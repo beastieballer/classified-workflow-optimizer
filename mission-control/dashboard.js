@@ -186,6 +186,13 @@ async function init() {
   const closeRate = metrics.qualifiedLeads ? Math.round((metrics.dealsWon / metrics.qualifiedLeads) * 100) : 0;
   const landingPagesCount = (assets.landingPages || []).length;
   const pitchDecksCount = (assets.pitchDecks || []).length;
+  const salesAssetsCount = (assets.salesAssets || []).length;
+  const allLinks = [
+    ...(assets.landingPages || []),
+    ...(assets.pitchDecks || []),
+    ...(assets.salesAssets || [])
+  ];
+  const allLinksCount = allLinks.length;
 
   setStats([
     { label: 'Pipeline Value', value: `$${metrics.revenueClosed.toLocaleString()}`, sub: 'Closed so far', tone: statusClass(metrics.revenueClosed, weeklyTargets.revenueClosed) },
@@ -194,6 +201,8 @@ async function init() {
     { label: 'Close Rate', value: `${closeRate}%`, sub: 'Won / Qualified', tone: closeRate >= 20 ? 'good' : closeRate >= 10 ? 'warn' : 'bad' },
     { label: 'Landing Pages', value: landingPagesCount, sub: 'Linked in Assets Hub', tone: landingPagesCount >= 4 ? 'good' : 'warn' },
     { label: 'Pitch Deck Links', value: pitchDecksCount, sub: 'Linked in Assets Hub', tone: pitchDecksCount >= 4 ? 'good' : 'warn' },
+    { label: 'Sales Asset Links', value: salesAssetsCount, sub: 'One-pagers + outreach kits', tone: salesAssetsCount >= 4 ? 'good' : 'warn' },
+    { label: 'Mission Control Links', value: allLinksCount, sub: 'All tracked asset links', tone: allLinksCount >= 10 ? 'good' : allLinksCount >= 6 ? 'warn' : 'bad' },
     { label: 'Open Actions', value: actionOpen.length, sub: `${actionDone.length} done`, tone: actionOpen.length <= 3 ? 'good' : actionOpen.length <= 7 ? 'warn' : 'bad' },
     { label: 'Build Blockers', value: buildOpen.length, sub: 'Open build tasks', tone: buildOpen.length <= 2 ? 'good' : buildOpen.length <= 6 ? 'warn' : 'bad' }
   ]);
@@ -203,6 +212,7 @@ async function init() {
   renderScoreboard(metrics, weeklyTargets);
   renderAssetList('landingPagesList', assets.landingPages || []);
   renderAssetList('pitchDecksList', assets.pitchDecks || []);
+  renderAssetList('allLinksList', allLinks);
 
   document.getElementById('todayList').innerHTML = actionOpen.slice(0, 8).map((l) => `<li>${l.replace('- [ ] ', '')}</li>`).join('');
   document.getElementById('buildList').innerHTML = buildOpen.slice(0, 8).map((l) => `<li>${l.replace('- [ ] ', '')}</li>`).join('');

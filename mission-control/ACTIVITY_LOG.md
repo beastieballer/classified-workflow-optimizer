@@ -67,3 +67,7 @@ Chronological build log for autonomous work by Rook.
 - [07:58] Prepared first outreach batch for 8 PM/FSO/security contacts (paste-ready).
 
 - [08:00] Added 8-contact intake CSV to quickly personalize ShieldSpec outreach batch.
+
+- [08:08] Added KPI Links Hub panel to Mission Control dashboard with unified all-assets list.
+- [08:09] Added dashboard KPI cards for Sales Asset Links + total Mission Control Links.
+- [08:09] Expanded ASSET_INDEX.json to include all new ShieldSpec sales/outreach assets.

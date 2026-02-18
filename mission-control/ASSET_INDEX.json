@@ -11,5 +11,13 @@
     { "name": "AccessFlow 48 Investor Deck (PDF)", "url": "decks/accessflow-48-investor-deck.pdf", "type": "Deck PDF" },
     { "name": "AVO Investor Deck (PDF)", "url": "decks/avo-investor-deck.pdf", "type": "Deck PDF" },
     { "name": "SCIF Continuity Command Investor Deck (PDF)", "url": "decks/scif-continuity-command-investor-deck.pdf", "type": "Deck PDF" }
+  ],
+  "salesAssets": [
+    { "name": "ShieldSpec Preflight QA One-Pager (MD)", "url": "sales/SHIELDSPEC_PREFLIGHT_QA_ONE_PAGER.md", "type": "Sales Asset" },
+    { "name": "ShieldSpec Preflight QA One-Pager (HTML)", "url": "sales/SHIELDSPEC_PREFLIGHT_QA_ONE_PAGER.html", "type": "Sales Asset" },
+    { "name": "ShieldSpec Preflight QA One-Pager (PDF)", "url": "sales/SHIELDSPEC_PREFLIGHT_QA_ONE_PAGER.pdf", "type": "Sales Asset" },
+    { "name": "ShieldSpec Outreach Templates", "url": "sales/SHIELDSPEC_OUTREACH_TEMPLATES.md", "type": "Sales Asset" },
+    { "name": "ShieldSpec First 8 Outreach Batch", "url": "sales/SHIELDSPEC_FIRST_8_OUTREACH_BATCH.md", "type": "Sales Asset" },
+    { "name": "ShieldSpec Contacts 8 Intake CSV", "url": "sales/SHIELDSPEC_CONTACTS_8_INTAKE.csv", "type": "Sales Asset" }
   ]
 }
