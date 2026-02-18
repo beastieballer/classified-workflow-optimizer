@@ -19,6 +19,7 @@ A single place to track:
 - `ACTIVITY_LOG.md` — autonomous build timeline
 - `DEPLOY.md` — deploy instructions + status
 - `vercel.json` — static deploy config for Vercel
+- `security/` — Security & Trust Command Center (policy, access, runbook, evidence)
 
 ## Dashboard Modules (v3)
 - KPI strip with color-coded status

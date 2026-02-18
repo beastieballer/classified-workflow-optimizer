@@ -13,6 +13,8 @@
 - [ ] Create 10-question AVO discovery script (PM + security manager versions)
 - [ ] Run 5 AVO discovery calls and capture repeated bottlenecks
 - [ ] Attempt pre-sell: secure 1 paid AVO pilot
+- [ ] Review and approve Security & Trust Command Center baseline
+- [ ] Run first access attestation for both companies (least privilege pass)
 
 ## Waiting / Delegated
 - [ ] Final decision: Airtable vs HubSpot as primary CRM endpoint

@@ -27,6 +27,9 @@ Chronological build log for autonomous work by Rook.
 - [19:19] Drafted 6-slide investor mini-deck for ShieldSpec.
 - [19:37] Converted both investor decks into polished slide-style HTML presentations.
 - [19:40] Exported shareable PDF versions for ClearedConnect and ShieldSpec and deployed to live URL.
+- [20:38] Added Security & Trust Command Center templates in mission-control/security/.
+- [20:39] Added company-level security baselines for ClearedConnect and ShieldSpec.
+- [20:40] Linked security docs in dashboard and weekly action board.
 - [18:55] Heartbeat maintenance: marked public URL task complete and updated Action Board.
 - [18:56] Added new SCIF-adjacent concept: SCIF Continuity Command (22/25) to Idea Vault.
 - [18:57] Created mini-deck: mission-control/decks/scif-continuity-command.md
