@@ -35,6 +35,8 @@ Chronological build log for autonomous work by Rook.
 - [21:42] Added Landing Pages Hub + Pitch Decks Hub panels to Mission Control dashboard.
 - [21:47] Converted AccessFlow 48, AVO, and SCIF Continuity Command investor decks to PDF style.
 - [21:48] Updated Asset Index to prioritize PDF links for all investor pitch decks.
+- [22:12] Created pilot close pack: one-page SOW, pricing ladder, and tomorrow call script.
+- [22:13] Linked sales pack docs into Mission Control dashboard Files panel.
 - [18:55] Heartbeat maintenance: marked public URL task complete and updated Action Board.
 - [18:56] Added new SCIF-adjacent concept: SCIF Continuity Command (22/25) to Idea Vault.
 - [18:57] Created mini-deck: mission-control/decks/scif-continuity-command.md
