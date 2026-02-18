@@ -1,25 +1,25 @@
 # ACTION BOARD
 
 ## Today (Top 5)
-- [ ] Connect intake to Airtable or HubSpot
-- [ ] Draft outreach script (short DM/email + call opener)
-- [ ] Build list of 20 warm contacts (tag 5 for AVO discovery)
-- [ ] Schedule 3 confidential scope calls
-- [ ] Draft AVO one-pager + pilot pricing options (2-week sprint)
+- [ ] Finalize AccessFlow 48 one-pager (offer, timeline, pricing)
+- [ ] Build target list of 12 contacts (PM/FSO/facility security)
+- [ ] Run 3 fast discovery calls on access-sequencing delays
+- [ ] Draft pilot SOW template for 2-week “Access Rescue Sprint”
+- [ ] Keep ClearedConnect momentum: complete CRM endpoint decision + setup
 
 ## This Week
-- [ ] Add trust stack (logos/testimonials/security-safe credibility line)
-- [ ] Add call booking link (Calendly or direct scheduler)
-- [ ] Create 10-question AVO discovery script (PM + security manager versions)
-- [ ] Run 5 AVO discovery calls and capture repeated bottlenecks
-- [ ] Attempt pre-sell: secure 1 paid AVO pilot
-- [ ] Review and approve Security & Trust Command Center baseline
+- [ ] Run 6 total AccessFlow discovery calls and tag repeated bottlenecks
+- [ ] Attempt pre-sell: secure 1 paid AccessFlow pilot
+- [ ] Draft reusable access-sequencing checklist + escalation matrix
+- [ ] Complete ClearedConnect trust stack + booking CTA update
+- [ ] Schedule 3 confidential scope calls for ClearedConnect
 - [ ] Run first access attestation for both companies (least privilege pass)
 
 ## Waiting / Delegated
 - [ ] Final decision: Airtable vs HubSpot as primary CRM endpoint
-- [ ] Confirm legal-safe language for “accreditation support” claims on public materials
+- [ ] Confirm legal-safe language for “accreditation support” and “access coordination” claims
 
 ## Done
 - [x] Mission Control initialized
 - [x] Mission Control deployed to permanent mobile URL (Vercel)
+- [x] Added AVO dual-track validation lane in Mission Control

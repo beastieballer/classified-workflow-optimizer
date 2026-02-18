@@ -22,7 +22,7 @@
 4. Book first 3-5 calls
 5. Close first brokered project
 
-## Expansion Track: SCIF Accreditation Velocity Office (AVO)
+## Expansion Track A: SCIF Accreditation Velocity Office (AVO)
 - **Current Stage:** VALIDATE
 - **Objective (14 days):** close 1 paid accreditation-readiness pilot
 - **Offer v0:** package triage, artifact checklist, authority-ready handoff brief
@@ -33,11 +33,23 @@
 3. Identify top 3 recurring bottlenecks across calls
 4. Convert 1 “urgent package rescue” into paid pilot
 
+## Expansion Track B: AccessFlow 48 (SCIF Access Sequencing Concierge)
+- **Current Stage:** VALIDATE
+- **Objective (10 days):** close 1 paid “Access Rescue Sprint” pilot
+- **Offer v0:** access dependency map, badging/escort sequencing, daily unblock cadence
+
+### AccessFlow Milestones
+1. Publish mini-deck + one-page sprint offer
+2. Conduct 6 discovery calls (PM/FSO/facility security)
+3. Capture top 3 recurring access-delay patterns
+4. Convert 1 active delayed project into paid pilot
+
 ## Blockers / Risks
 - CRM endpoint not yet live
 - ClearedConnect outreach script + segmentation still incomplete
 - AVO positioning must avoid over-claiming authority/accreditation outcomes
+- AccessFlow claims must stay in coordination lane (not government authority promises)
 
 ## Notes
 - Model policy: default Codex; ask Alex before model switching during active conversation.
-- Mission Control now running dual-track: ClearedConnect BUILD + AVO VALIDATE.
+- Mission Control now running three lanes: ClearedConnect BUILD + AVO VALIDATE + AccessFlow VALIDATE.

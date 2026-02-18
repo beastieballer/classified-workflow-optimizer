@@ -4,7 +4,8 @@ const files = {
   ideas: 'IDEA_VAULT.md',
   metrics: 'METRICS_LOG.md',
   activity: 'ACTIVITY_LOG.md',
-  config: 'CONFIG.json'
+  config: 'CONFIG.json',
+  assets: 'ASSET_INDEX.json'
 };
 
 const defaultTargets = {
@@ -137,14 +138,27 @@ function renderScoreboard(metrics, weeklyTargets) {
     .join('');
 }
 
+function renderAssetList(id, items = []) {
+  const root = document.getElementById(id);
+  if (!root) return;
+  if (!items.length) {
+    root.innerHTML = '<li>No assets listed yet.</li>';
+    return;
+  }
+  root.innerHTML = items
+    .map((item) => `<li><a href="${item.url}" target="_blank" rel="noreferrer">${item.name}</a> <small>(${item.type})</small></li>`)
+    .join('');
+}
+
 async function init() {
-  const [actions, build, ideas, activity, metricsMd, config] = await Promise.all([
+  const [actions, build, ideas, activity, metricsMd, config, assets] = await Promise.all([
     loadText(files.actions),
     loadText(files.build),
     loadText(files.ideas),
     loadText(files.activity),
     loadText(files.metrics),
-    loadJson(files.config, {})
+    loadJson(files.config, {}),
+    loadJson(files.assets, { landingPages: [], pitchDecks: [] })
   ]);
 
   const weeklyTargets = config.weeklyTargets || defaultTargets;
@@ -170,12 +184,16 @@ async function init() {
   };
 
   const closeRate = metrics.qualifiedLeads ? Math.round((metrics.dealsWon / metrics.qualifiedLeads) * 100) : 0;
+  const landingPagesCount = (assets.landingPages || []).length;
+  const pitchDecksCount = (assets.pitchDecks || []).length;
 
   setStats([
     { label: 'Pipeline Value', value: `$${metrics.revenueClosed.toLocaleString()}`, sub: 'Closed so far', tone: statusClass(metrics.revenueClosed, weeklyTargets.revenueClosed) },
     { label: 'Leads This Week', value: metrics.inboundLeads, sub: `Target ${weeklyTargets.inboundLeads}`, tone: statusClass(metrics.inboundLeads, weeklyTargets.inboundLeads) },
     { label: 'Calls Booked', value: metrics.scopeCallsBooked, sub: `Target ${weeklyTargets.scopeCallsBooked}`, tone: statusClass(metrics.scopeCallsBooked, weeklyTargets.scopeCallsBooked) },
     { label: 'Close Rate', value: `${closeRate}%`, sub: 'Won / Qualified', tone: closeRate >= 20 ? 'good' : closeRate >= 10 ? 'warn' : 'bad' },
+    { label: 'Landing Pages', value: landingPagesCount, sub: 'Linked in Assets Hub', tone: landingPagesCount >= 4 ? 'good' : 'warn' },
+    { label: 'Pitch Deck Links', value: pitchDecksCount, sub: 'Linked in Assets Hub', tone: pitchDecksCount >= 4 ? 'good' : 'warn' },
     { label: 'Open Actions', value: actionOpen.length, sub: `${actionDone.length} done`, tone: actionOpen.length <= 3 ? 'good' : actionOpen.length <= 7 ? 'warn' : 'bad' },
     { label: 'Build Blockers', value: buildOpen.length, sub: 'Open build tasks', tone: buildOpen.length <= 2 ? 'good' : buildOpen.length <= 6 ? 'warn' : 'bad' }
   ]);
@@ -183,6 +201,8 @@ async function init() {
   renderVentureDeck(ventures);
   renderFunnel(metrics);
   renderScoreboard(metrics, weeklyTargets);
+  renderAssetList('landingPagesList', assets.landingPages || []);
+  renderAssetList('pitchDecksList', assets.pitchDecks || []);
 
   document.getElementById('todayList').innerHTML = actionOpen.slice(0, 8).map((l) => `<li>${l.replace('- [ ] ', '')}</li>`).join('');
   document.getElementById('buildList').innerHTML = buildOpen.slice(0, 8).map((l) => `<li>${l.replace('- [ ] ', '')}</li>`).join('');

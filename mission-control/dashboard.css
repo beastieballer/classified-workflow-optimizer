@@ -50,7 +50,7 @@ header h1 { margin: 0; }
 header p { margin: .2rem 0 0; color: var(--muted); }
 main { width: min(1200px, 94vw); margin: 1rem auto 2rem; position: relative; z-index: 2; }
 
-.grid { display: grid; grid-template-columns: repeat(6,1fr); gap: .8rem; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: .8rem; }
 .card {
   background: linear-gradient(180deg, #101d3a 0%, #0d1831 100%);
   border: 1px solid var(--line);

@@ -1,0 +1,17 @@
+{
+  "landingPages": [
+    { "name": "SCIF Continuity Command", "url": "ideas/scif-continuity-command.html", "type": "Idea Landing Page" },
+    { "name": "SCIF Accreditation Velocity Office (AVO)", "url": "ideas/scif-accreditation-velocity-office.html", "type": "Idea Landing Page" },
+    { "name": "AccessFlow 48", "url": "ideas/accessflow-48.html", "type": "Idea Landing Page" },
+    { "name": "SecureScope AI", "url": "ideas/securescope-ai.html", "type": "Idea Landing Page" }
+  ],
+  "pitchDecks": [
+    { "name": "ClearedConnect Investor Deck (HTML)", "url": "decks/clearedconnect-investor-deck.html", "type": "Deck" },
+    { "name": "ClearedConnect Investor Deck (PDF)", "url": "decks/clearedconnect-investor-deck.pdf", "type": "Deck" },
+    { "name": "ShieldSpec Investor Deck (HTML)", "url": "decks/shieldspec-investor-deck.html", "type": "Deck" },
+    { "name": "ShieldSpec Investor Deck (PDF)", "url": "decks/shieldspec-investor-deck.pdf", "type": "Deck" },
+    { "name": "AccessFlow 48 Mini-Deck", "url": "decks/accessflow-48.md", "type": "Mini-Deck" },
+    { "name": "AVO Mini-Deck", "url": "decks/scif-accreditation-velocity-office.md", "type": "Mini-Deck" },
+    { "name": "SCIF Continuity Command Mini-Deck", "url": "decks/scif-continuity-command.md", "type": "Mini-Deck" }
+  ]
+}

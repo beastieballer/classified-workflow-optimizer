@@ -21,15 +21,22 @@ A single place to track:
 - `vercel.json` — static deploy config for Vercel
 - `security/` — Security & Trust Command Center (policy, access, runbook, evidence)
 
-## Dashboard Modules (v3)
+## Dashboard Modules (v4)
 - KPI strip with color-coded status
+- KPI counters for landing pages + pitch decks
 - Venture Command Deck (ClearedConnect + ShieldSpec)
 - Per-venture actionable next moves
 - Pipeline funnel visualization
 - Weekly target-vs-actual scoreboard
+- Landing Pages Hub + Pitch Decks Hub (clean HTML/PDF links)
 - Today actions, build tracker, top ideas
 - Live recent activity feed
 - Animated gradient grid background + hover motion
+
+## Asset Index
+`ASSET_INDEX.json` controls dashboard links for:
+- Landing pages
+- Pitch decks / mini-decks
 
 ## Configuration
 Edit `CONFIG.json` to control:
