@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Living Files Theory — v2</title>
+  <style>
+    :root{
+      --bg:#f4f5f7;
+      --ink:#1f2937;
+      --muted:#4b5563;
+      --green:#43b36b;
+      --line:#9ca3af;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,sans-serif;
+      background:var(--bg);
+      color:var(--ink);
+    }
+    .page{
+      width:1400px;
+      min-height:760px;
+      margin:0 auto;
+      padding:26px 28px 30px;
+      background:var(--bg);
+    }
+    h1{
+      margin:0;
+      font-size:86px;
+      line-height:.95;
+      letter-spacing:1px;
+      color:var(--green);
+      font-weight:900;
+      text-transform:uppercase;
+      text-align:center;
+    }
+    .subtitle{
+      margin-top:8px;
+      text-align:center;
+      font-size:28px;
+      color:#334155;
+      font-weight:600;
+    }
+    .content{
+      margin-top:20px;
+      display:grid;
+      grid-template-columns: 430px 1fr;
+      gap:24px;
+      align-items:stretch;
+    }
+    .card{
+      background:white;
+      border:1px solid #d1d5db;
+      border-radius:18px;
+      padding:16px;
+      height:100%;
+    }
+    .portrait-wrap{
+      display:flex;
+      flex-direction:column;
+      gap:10px;
+      height:100%;
+      justify-content:space-between;
+    }
+    .portrait{
+      border-radius:14px;
+      border:1px solid #d1d5db;
+      height:500px;
+      background:linear-gradient(135deg,#dfe3e8,#f8fafc);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      text-align:center;
+      color:#374151;
+      font-weight:700;
+      padding:20px;
+    }
+    .cap{
+      font-size:19px;
+      color:var(--muted);
+      text-align:center;
+      font-weight:600;
+    }
+    svg{width:100%;height:100%}
+    .legend{
+      margin-top:10px;
+      display:grid;
+      grid-template-columns:repeat(3,minmax(0,1fr));
+      gap:8px;
+      font-size:14px;
+      color:#374151;
+    }
+    .dot{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:6px;vertical-align:middle}
+    @media print{
+      .page{width:auto;min-height:auto}
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <h1>LIVING FILES THEORY</h1>
+    <div class="subtitle">From static notes to adaptive memory systems</div>
+
+    <div class="content">
+      <div class="card portrait-wrap">
+        <div class="portrait">
+          Evolution Metaphor<br/>
+          (Darwin reference)
+        </div>
+        <div class="cap">Variation → Selection → Retention<br/>Applied to AI memory + context</div>
+      </div>
+
+      <div class="card">
+        <svg viewBox="0 0 900 520" aria-label="Context Engineering Diagram">
+          <defs>
+            <style>
+              .t{font: 18px -apple-system,BlinkMacSystemFont,Segoe UI,Arial,sans-serif; fill:#1f2937}
+              .s{font: 15px -apple-system,BlinkMacSystemFont,Segoe UI,Arial,sans-serif; fill:#374151}
+              .h{font: 31px -apple-system,BlinkMacSystemFont,Segoe UI,Arial,sans-serif; font-weight:700; fill:#111827}
+            </style>
+          </defs>
+
+          <ellipse cx="455" cy="267" rx="420" ry="230" fill="none" stroke="#9ca3af" stroke-width="2.4"/>
+          <text x="355" y="32" class="h">Context Engineering</text>
+          <text x="430" y="64" class="t">Context</text>
+
+          <ellipse cx="330" cy="165" rx="155" ry="108" fill="#fde68a" fill-opacity=".42" stroke="#f59e0b" stroke-opacity=".35"/>
+          <text x="225" y="168" class="s">Instructions / System Prompt</text>
+
+          <ellipse cx="540" cy="160" rx="145" ry="112" fill="#f9a8d4" fill-opacity=".38" stroke="#db2777" stroke-opacity=".35"/>
+          <text x="470" y="170" class="s">Long-Term Memory</text>
+
+          <ellipse cx="245" cy="250" rx="150" ry="104" fill="#e5e7eb" fill-opacity=".78" stroke="#9ca3af" stroke-opacity=".45"/>
+          <text x="145" y="246" class="s">State / History</text>
+          <text x="145" y="267" class="s">(short-term memory)</text>
+
+          <ellipse cx="425" cy="250" rx="122" ry="78" fill="#93c5fd" fill-opacity=".46" stroke="#2563eb" stroke-opacity=".35"/>
+          <text x="350" y="249" class="s">Retrieved</text>
+          <text x="328" y="270" class="s">Information (RAG)</text>
+
+          <ellipse cx="350" cy="390" rx="145" ry="98" fill="#c4b5fd" fill-opacity=".38" stroke="#7c3aed" stroke-opacity=".35"/>
+          <text x="300" y="395" class="s">User Prompt</text>
+
+          <ellipse cx="640" cy="310" rx="145" ry="98" fill="#86efac" fill-opacity=".42" stroke="#16a34a" stroke-opacity=".35"/>
+          <text x="585" y="315" class="s">Available Tools</text>
+
+          <ellipse cx="645" cy="410" rx="78" ry="40" fill="#bbf7d0" fill-opacity=".45" stroke="#22c55e" stroke-opacity=".35"/>
+          <text x="587" y="410" class="s">Structured</text>
+          <text x="612" y="428" class="s">Output</text>
+        </svg>
+
+        <div class="legend">
+          <div><span class="dot" style="background:#fcd34d"></span>Instructions</div>
+          <div><span class="dot" style="background:#f9a8d4"></span>Long-term memory</div>
+          <div><span class="dot" style="background:#d1d5db"></span>Short-term state</div>
+          <div><span class="dot" style="background:#93c5fd"></span>RAG retrieval</div>
+          <div><span class="dot" style="background:#c4b5fd"></span>User prompt</div>
+          <div><span class="dot" style="background:#86efac"></span>Tools + output</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
