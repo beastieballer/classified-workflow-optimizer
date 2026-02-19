@@ -1,9 +1,9 @@
 # ACTION BOARD
 
-## Top 3 Priorities (Today)
-- [ ] Close loop on ShieldSpec outreach: send first 8 PM/FSO messages and book 3 calls
-- [ ] Publish SCIF Supplier Assurance Network “Supplier Readiness Sprint” one-pager
-- [ ] Book first 2 SSAN discovery calls (PM + procurement/FSO) on active vendor-constrained projects
+## Top 3 Priorities (Now)
+- [ ] Publish one-page "Secure Project Recovery Sprint" offer (ClearedConnect + ShieldSpec)
+- [ ] Send combined-offer outreach to first 8 PM/FSO contacts
+- [ ] Book first 2 discovery calls for active recovery cases (outage, failed inspection, delayed mobilization)
 
 ## This Week
 - [ ] Pre-sell 1 paid Preflight QA triage sprint
@@ -25,6 +25,8 @@
 - [ ] Attempt pre-sell: secure 1 paid SSAN supplier-readiness sprint
 - [ ] Validate VMC with 5 discovery calls and extract top 3 mobilization-readiness bottlenecks
 - [ ] Attempt pre-sell: secure 1 paid VMC mobilization sprint
+- [ ] Validate MRC with 5 discovery calls and extract top 3 return-to-mission failure patterns
+- [ ] Attempt pre-sell: secure 1 paid MRC reconstitution sprint
 - [ ] Complete ClearedConnect trust stack + booking CTA update
 - [ ] Schedule 3 confidential scope calls for ClearedConnect
 - [ ] Run first access attestation for both companies (least privilege pass)

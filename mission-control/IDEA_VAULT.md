@@ -307,3 +307,33 @@
 - Run 5 discovery calls (PM, procurement, FSO, site superintendent, vendor PM)
 - Pre-sell 1 paid sprint tied to an active project with mobilization in <=30 days
 
+---
+
+## 16) SCIF Mission Reconstitution Cell (MRC)
+- **Status:** VALIDATE
+- **Problem:** After outages, failed inspections, security incidents, or stop-work events, SCIF programs lose days-to-weeks because no one owns the cross-functional return-to-mission plan.
+- **Business Model:** Fixed-fee 10-day “Reconstitution Sprint” + incident-response premium + optional monthly readiness retainer.
+- **Why we can win:** Combines ClearedConnect labor activation + ShieldSpec documentation discipline into a high-urgency recovery lane with immediate buyer pain.
+
+### Score
+- Speed to Revenue: 5
+- Differentiation: 5
+- Founder Edge: 5
+- Build Simplicity: 4
+- Expansion Potential: 5
+- **Total: 24/25**
+
+### 72-Hour Validation Plan
+- Publish one-page “Return-to-Mission Sprint” offer (72-hour stabilization plan, owner map, daily command brief)
+- Run 5 discovery calls (PM, FSO, facility security, commissioning lead, program director)
+- Pre-sell 1 paid sprint tied to an active outage/failed-inspection recovery case
+
+
+## 2026-02-19 Refinement — ClearedConnect x ShieldSpec Joint Offer
+- **Type:** Refinement (not a new concept)
+- **Refinement:** Package a single entry offer: **"Secure Project Recovery Sprint"** that bundles rapid cleared labor activation (ClearedConnect) + scope/document triage (ShieldSpec).
+- **Why this matters:** reduces sales friction versus pitching two separate services; easier to pre-sell as one urgent outcome.
+- **Fast test (48h):**
+  - Draft one-page combined offer with fixed deliverables + 10-day timeline
+  - Send to 8 PM/FSO contacts as a single rescue package
+  - Target: 2 discovery calls + 1 paid sprint proposal
