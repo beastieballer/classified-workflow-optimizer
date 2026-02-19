@@ -3,16 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Campaign OS MVP</title>
+  <title>Campaign OS v2 Console</title>
   <link rel="stylesheet" href="./styles.css" />
 </head>
 <body>
   <main class="wrap">
     <header class="card row between">
       <div>
-        <p class="eyebrow">Campaign OS</p>
-        <h1>Operator Console (MVP)</h1>
-        <p>AI recommendations for budget reallocation, creative signals, and compliance flags.</p>
+        <p class="eyebrow">Campaign OS v2</p>
+        <h1>Operator Console</h1>
+        <p>Rules engine, saved scenarios, and compliance preflight gate.</p>
       </div>
       <a class="btn ghost" href="./index.html">Overview</a>
     </header>
@@ -35,12 +35,34 @@
           <small>Format: channel,current,perf</small>
         </label>
       </div>
+      <div class="row top-gap">
+        <input id="scenarioName" type="text" placeholder="Scenario name (e.g., Maryland-CTV-Push)" />
+        <button id="saveScenario" class="btn">Save Scenario</button>
+        <select id="scenarioList"><option value="">Load saved scenario…</option></select>
+        <button id="deleteScenario" class="btn ghost">Delete</button>
+      </div>
     </section>
 
     <section class="grid3">
       <article class="card stat"><span>Projected Lift</span><strong id="lift">+0.0%</strong></article>
       <article class="card stat"><span>Compliance Risk</span><strong id="risk">Low</strong></article>
       <article class="card stat"><span>Budget Efficiency</span><strong id="eff">0.00</strong></article>
+    </section>
+
+    <section class="card">
+      <h2>Rules Engine (Proven Automation Pattern)</h2>
+      <div class="rules">
+        <label>Pause threshold (if perf index &lt;)
+          <input id="pauseThreshold" type="number" step="0.01" value="0.9" />
+        </label>
+        <label>Scale threshold (if perf index &gt;)
+          <input id="scaleThreshold" type="number" step="0.01" value="1.1" />
+        </label>
+        <label>Scale step (% budget)
+          <input id="scaleStep" type="number" step="1" value="15" />
+        </label>
+      </div>
+      <ul id="ruleOutput"></ul>
     </section>
 
     <section class="card">
@@ -61,6 +83,16 @@
         <h2>Compliance Alerts</h2>
         <ul id="alerts"></ul>
       </section>
+    </section>
+
+    <section class="card">
+      <h2>Compliance Preflight Gate</h2>
+      <div class="checks">
+        <label><input id="chkDisclaimer" type="checkbox" /> Disclaimer block present</label>
+        <label><input id="chkSponsor" type="checkbox" /> Sponsor tag present on creative</label>
+        <label><input id="chkClaims" type="checkbox" /> No prohibited/absolute claim language</label>
+      </div>
+      <p id="gateStatus" class="gate">Gate: BLOCKED</p>
     </section>
   </main>
   <script src="./app.js"></script>
