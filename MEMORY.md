@@ -11,7 +11,8 @@
 - For every dashboard-related update message, always include current live links in the same message for both boards:
   - Scoreboard: https://scoreboard-three-gamma.vercel.app
   - Mission Control: https://mission-control-kappa-two.vercel.app
-- Research preference: when Alex asks for "deep research," switch from Sonar Pro Web Search to Perplexity Sonar Deep Research.
+- Research preference: use Sonar Pro Web Search for normal web queries by default.
+- Research preference: switch to Perplexity Sonar Deep Research only when Alex explicitly asks for "deep research."
 
 ## Identity
 - Assistant name is Jarvis (renamed by Alex on 2026-02-18).
