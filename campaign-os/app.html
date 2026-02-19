@@ -8,42 +8,59 @@
 </head>
 <body>
   <main class="wrap">
-    <header class="card">
-      <h1>Campaign OS MVP</h1>
-      <p>Prototype decision console for campaign operators.</p>
+    <header class="card row between">
+      <div>
+        <p class="eyebrow">Campaign OS</p>
+        <h1>Operator Console (MVP)</h1>
+        <p>AI recommendations for budget reallocation, creative signals, and compliance flags.</p>
+      </div>
+      <a class="btn ghost" href="./index.html">Overview</a>
     </header>
 
+    <section class="card">
+      <h2>Scenario Controls</h2>
+      <div class="controls">
+        <label>Total Budget ($)
+          <input id="budget" type="number" value="150000" min="1000" step="1000" />
+        </label>
+        <label>Risk Tolerance
+          <select id="riskTolerance">
+            <option value="low">Low</option>
+            <option value="med" selected>Medium</option>
+            <option value="high">High</option>
+          </select>
+        </label>
+        <label>Upload channels CSV
+          <input id="csv" type="file" accept=".csv,text/csv" />
+          <small>Format: channel,current,perf</small>
+        </label>
+      </div>
+    </section>
+
     <section class="grid3">
-      <article class="card stat">
-        <span>Projected Lift</span>
-        <strong id="lift">+0.0%</strong>
-      </article>
-      <article class="card stat">
-        <span>Compliance Risk</span>
-        <strong id="risk">Low</strong>
-      </article>
-      <article class="card stat">
-        <span>Budget Efficiency</span>
-        <strong id="eff">0.00</strong>
-      </article>
+      <article class="card stat"><span>Projected Lift</span><strong id="lift">+0.0%</strong></article>
+      <article class="card stat"><span>Compliance Risk</span><strong id="risk">Low</strong></article>
+      <article class="card stat"><span>Budget Efficiency</span><strong id="eff">0.00</strong></article>
     </section>
 
     <section class="card">
       <h2>Channel Spend Reallocation</h2>
       <table>
-        <thead><tr><th>Channel</th><th>Current</th><th>Recommended</th><th>Δ</th></tr></thead>
+        <thead><tr><th>Channel</th><th>Current %</th><th>Recommended %</th><th>Δ</th><th>Recommended $</th></tr></thead>
         <tbody id="rows"></tbody>
       </table>
     </section>
 
-    <section class="card">
-      <h2>Creative Variant Signals</h2>
-      <ul id="variants"></ul>
-    </section>
+    <section class="grid2">
+      <section class="card">
+        <h2>Creative Variant Signals</h2>
+        <ul id="variants"></ul>
+      </section>
 
-    <section class="card">
-      <h2>Compliance Alerts</h2>
-      <ul id="alerts"></ul>
+      <section class="card">
+        <h2>Compliance Alerts</h2>
+        <ul id="alerts"></ul>
+      </section>
     </section>
   </main>
   <script src="./app.js"></script>
