@@ -1,9 +1,9 @@
 # ACTION BOARD
 
 ## Top 3 Priorities (Now)
-- [ ] Publish one-page "Secure Project Recovery Sprint" offer (ClearedConnect + ShieldSpec)
-- [ ] Send combined-offer outreach to first 8 PM/FSO contacts
-- [ ] Book first 2 discovery calls for active recovery cases (outage, failed inspection, delayed mobilization)
+- [ ] Draft one-page "Site Readiness Certification Sprint" offer (ORA) with training scope, delivery format, and incident-reduction value prop
+- [ ] Identify 5 active sites with recent incident pressure or upcoming inspection cycles for ORA discovery outreach
+- [ ] Run 3 ORA discovery calls (FSO, facility security, site superintendent) and extract top on-site readiness failure patterns
 
 ## This Week
 - [ ] Pre-sell 1 paid Preflight QA triage sprint
@@ -27,13 +27,23 @@
 - [ ] Attempt pre-sell: secure 1 paid VMC mobilization sprint
 - [ ] Validate MRC with 5 discovery calls and extract top 3 return-to-mission failure patterns
 - [ ] Attempt pre-sell: secure 1 paid MRC reconstitution sprint
+- [ ] Validate ERC with 5 discovery calls and extract top 3 late-stage emanation-readiness failure patterns
+- [ ] Attempt pre-sell: secure 1 paid ERC readiness sprint
+- [ ] Validate DAC with 5 discovery calls and extract top 3 decommissioning/sanitization failure patterns
+- [ ] Attempt pre-sell: secure 1 paid DAC decommissioning assurance sprint
+- [ ] Validate PCNC with 5 discovery calls and extract top 3 cross-lane program-control failure patterns
+- [ ] Attempt pre-sell: secure 1 paid PCNC controls setup sprint
+- [ ] Validate KCC with 5 discovery calls (outgoing/incoming leads + FSO) and extract top 3 knowledge-loss failure patterns
+- [ ] Attempt pre-sell: secure 1 paid KCC knowledge-transfer sprint tied to active personnel rotation
+- [ ] Validate ORA with 5 discovery calls (FSO/facility security/PM/superintendent/HR) and extract top 3 on-site readiness failure patterns
+- [ ] Attempt pre-sell: secure 1 paid ORA site-readiness certification pilot tied to active site with incident pressure
 - [ ] Complete ClearedConnect trust stack + booking CTA update
 - [ ] Schedule 3 confidential scope calls for ClearedConnect
 - [ ] Run first access attestation for both companies (least privilege pass)
 
 ## Waiting / Delegated
 - [ ] Final decision: Airtable vs HubSpot as primary CRM endpoint
-- [ ] Confirm legal-safe language for “accreditation support” and “access coordination” claims
+- [ ] Confirm legal-safe language for saccreditation support and access coordination claims
 
 ## Done
 - [x] Mission Control initialized

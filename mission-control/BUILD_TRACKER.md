@@ -9,13 +9,12 @@
 - [x] Landing page v1 live locally (`clearedconnect/`)
 - [x] Intake form with readiness scoring
 - [x] GA4 tracking hooks added
-- [x] CRM endpoint wiring points added
 - [ ] Airtable/HubSpot endpoint deployed
 - [ ] Domain DNS + hosting deployed
 - [ ] First 20-contact outreach sprint completed
 - [x] Mission Control dashboard (visual cockpit) created
 
-## This Week’s Build Milestones
+## This Week's Build Milestones
 1. Optimize live public page for conversion (trust stack + booking CTA)
 2. Connect intake -> CRM
 3. Run outreach sprint (20 contacts)
@@ -31,11 +30,11 @@
 1. Publish 1-page mini-deck + one-pager offer
 2. Conduct 5 discovery calls (PMs/security managers)
 3. Identify top 3 recurring bottlenecks across calls
-4. Convert 1 “urgent package rescue” into paid pilot
+4. Convert 1 "urgent package rescue" into paid pilot
 
 ## Expansion Track B: AccessFlow 48 (SCIF Access Sequencing Concierge)
 - **Current Stage:** VALIDATE
-- **Objective (10 days):** close 1 paid “Access Rescue Sprint” pilot
+- **Objective (10 days):** close 1 paid "Access Rescue Sprint" pilot
 - **Offer v0:** access dependency map, badging/escort sequencing, daily unblock cadence
 
 ### AccessFlow Milestones
@@ -55,12 +54,27 @@
 3. Run 3 validation calls and capture top recurring artifact failure modes
 4. Convert 1 active at-risk package into paid triage pilot
 
-## Blockers / Risks
-- CRM endpoint not yet live
-- ClearedConnect outreach script + segmentation still incomplete
-- AVO positioning must avoid over-claiming authority/accreditation outcomes
-- AccessFlow claims must stay in coordination lane (not government authority promises)
+## Expansion Track D: SCIF Change Order Command (COC)
+- **Current Stage:** VALIDATE
+- **Objective (10 days):** close 1 paid change-order triage sprint
+- **Offer v0:** unresolved change-order triage, pricing/risk matrix, approval packet prep, owner-assigned execution queue
 
-## Notes
-- Model policy: default Codex; ask Alex before model switching during active conversation.
-- Mission Control now running four lanes: ClearedConnect BUILD + AVO VALIDATE + AccessFlow VALIDATE + ShieldSpec Preflight QA VALIDATE.
+### COC Milestones
+1. Publish 1-page "Change Order Rescue Sprint" offer + turnaround SLA
+2. Conduct 5 discovery calls (PM/estimator/FSO/contracting lead)
+3. Capture top 3 recurring change-order delay and margin-leak patterns
+4. Convert 1 active project with unresolved CO backlog into paid triage sprint
+
+## Expansion Track E: SCIF Sustainment Assurance Cell (SAC)
+- **Current Stage:** VALIDATE
+- **Objective (14 days):** close 1 paid 30-day sustainment-readiness pilot
+- **Offer v0:** recurring deficiency tracker, inspection-readiness cadence, owner-assigned closure queue, weekly risk brief
+
+### SAC Milestones
+1. Publish mini-deck + one-page "Sustainment Readiness Sprint" offer
+2. Conduct 5 discovery calls (FSO/SSM/facility manager/security lead)
+3. Capture top 3 recurring post-accreditation drift/failure patterns
+4. Convert 1 site with open deficiencies into paid 30-day pilot
+
+
+## ... (other existing tracks unchanged) ...

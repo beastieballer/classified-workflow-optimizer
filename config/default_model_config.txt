@@ -1,0 +1,2 @@
+default_model = gemini
+model_version = 2.5
